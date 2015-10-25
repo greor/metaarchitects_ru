@@ -1,0 +1,33 @@
+
+.random-grid{
+	margin-top: 120px;
+}
+
+/* clearfix */
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+
+.random-grid .works-item {
+  width:  25%;
+  float: left;
+  background: #C09;
+  margin-bottom: 130px;
+  margin-top: 20px; 
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+
+.random-grid .works-item.w2 { width:  33%; background: #9C0;
+  margin-bottom: 360px; margin-top: 50px; }
+.random-grid .works-item.w4 { width:  50%; background: #90C;
+  margin-bottom: 780px; margin-top: 70px; }
+
+
+.random-grid .gutter-sizer { width: 10%; }

@@ -1,0 +1,15 @@
+.intro04-bg{
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.intro04 .separator-section{
+	/*background-color: rgba(255,255,255,0.5);*/
+}
+.intro04 h1 span{
+	font-size: 48px;
+	line-height: 56px;
+	text-transform: uppercase;
+	letter-spacing: 12px;
+	padding: 8px 8px 0 20px;
+}

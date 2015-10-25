@@ -1,0 +1,70 @@
+.showcase-02 .ms-section{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.showcase-02 .ms-overlay{
+    background-color: rgba(255,255,255,0.9);
+}
+.showcase-02 .head-caps{
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.showcase-02 .head-subline{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 200;
+    margin-top: 5px;
+}
+ .showcase-02 .head-liner{
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+}
+
+#myContainer{
+    margin-left: 100px;
+}
+
+.ms-section{
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    text-align: center;
+}
+#multiscroll-nav span{
+     background: #121212;
+    border: 1px solid #121212;
+    border-radius: 50%;
+    height: 12px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 12px;
+    z-index: 1;
+}
+#multiscroll-nav li .active span{
+     background: #fff;
+    border: 1px solid #fff;
+}
+
+/*Text Styles*/
+
+.ms-overlay{
+    display: none;
+    height: 100%;
+    background-color: transparent;
+}
+
+.ms-overlay a{
+    display: block;
+            cursor: url("../images/plus.png") 40 40, crosshair;
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+}

@@ -1,0 +1,12 @@
+
+.works-masonry-container{
+    padding: 0;
+  margin: 60px auto 100px auto !important;
+}
+.works-masonry-container .works-item {
+  margin: 1% !important;
+  padding: 0 !important;
+  width: 31.3% !important;
+}
+      
+      

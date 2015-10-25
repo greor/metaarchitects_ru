@@ -1,0 +1,63 @@
+.title-holder{
+	position: absolute;
+	bottom: 20%;
+	left: 100px;
+}
+.head-caps{
+	font-size: 64px;
+	line-height: 71px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.head-subline{
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 200;
+	margin-top: 5px;
+}
+.head-liner{
+	width: 80px;
+	height: 1px;
+    display: inline-block;
+}
+.showcase-01 .section{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.showcase-01-layer-01{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.showcase-01-layer-02{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.showcase-01-layer-03{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.showcase-01-layer-04{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.showcase-01 a{
+	opacity: 1;
+    -webkit-transition: all .8s linear;
+       -moz-transition: all .8s linear;
+        -ms-transition: all .8s linear;
+         -o-transition: all .8s linear;
+            transition: all .8s linear;
+}
+.showcase-01 a:hover{
+	opacity: 0.5;
+    -webkit-transition: all .8s linear;
+       -moz-transition: all .8s linear;
+        -ms-transition: all .8s linear;
+         -o-transition: all .8s linear;
+            transition: all .8s linear;
+}

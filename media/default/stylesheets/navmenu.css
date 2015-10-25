@@ -1,0 +1,252 @@
+.main-nav{}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+}
+
+
+
+.mobile-toggle {
+  cursor: pointer;
+  font-size: 20px;
+  position: fixed;
+  right: 20px;
+  top:25px;
+  width: 27px;
+  z-index: 1000;
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+}
+.mobile-toggle span {
+  width: 27px;
+  height: 2px;
+  margin-bottom: 4px;
+  background: #000;
+  display: block;
+  -webkit-transition: all .8s ease-in-out;
+     -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+     -o-transition: all .8s ease-in-out;
+      transition: all .8s ease-in-out;
+}
+.mobile-toggle.white span{
+  background: #fff;
+}
+.black-color{
+  background: #000 !important;
+  -webkit-transition: all .8s ease-in-out;
+     -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+     -o-transition: all .8s ease-in-out;
+      transition: all .8s ease-in-out;
+}
+.white-color{
+  background: #ccc !important;
+  -webkit-transition: all .8s ease-in-out;
+     -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+     -o-transition: all .8s ease-in-out;
+      transition: all .8s ease-in-out;
+}
+
+
+.menu-panel{
+  width: 50%;
+  position: fixed;
+  top: 0;
+  right: 3000px;
+  z-index: 999;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.menu-panel-inner{
+}
+.menu-block{
+  border:solid 3px;
+  padding: 20px 10px;
+  margin: 12px;
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+     -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+}
+.menu-block:hover{
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+     -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+}
+.menu-block a{
+  display: block;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+/*NAV MENU LIST*/
+.nav-list-holder{
+}
+.slogan-holder{
+  display: none;
+  padding: 20%;
+}
+
+.nav-item-wrap{
+}
+.main-nav-menu{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-nav-menu li{
+     padding: 0;
+     margin-bottom: 20px;
+}
+.main-nav-menu li a.main-nav-link{
+     font-weight: 200;
+     font-size: 18px;
+     line-height: 36px;
+     letter-spacing: 8px;
+     text-decoration: none;
+     text-transform: uppercase;
+    -webkit-transition: all .8s linear;
+       -moz-transition: all .8s linear;
+        -ms-transition: all .8s linear;
+         -o-transition: all .8s linear;
+            transition: all .8s linear;
+}
+.main-nav-menu li a.main-nav-link:hover{
+    -webkit-transition: all .8s linear;
+       -moz-transition: all .8s linear;
+        -ms-transition: all .8s linear;
+         -o-transition: all .8s linear;
+            transition: all .8s linear;
+}
+.main-nav-menu li a.current-main-nav{
+    -webkit-transition: all .8s linear;
+       -moz-transition: all .8s linear;
+        -ms-transition: all .8s linear;
+         -o-transition: all .8s linear;
+            transition: all .8s linear;
+}
+.sub-nav-holder{
+  display: none;
+}
+.sub-nav{
+  display: none;
+    padding: 30px;
+     text-align: left;
+}
+.sub-nav a{
+  display: block;
+     font-weight: 200;
+     font-size: 12px;
+     line-height: 19px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     text-decoration: none;
+     margin-bottom: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+     -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+}
+.sub-nav a:last-child{
+  margin-bottom: 0;
+}
+.sub-nav a:hover{
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+     -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+}
+/*SLOGAN*/
+.slogan-text{
+  margin-top: 10px;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 600;
+}
+.slogan-subtext{
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.copy-credits{
+  text-align: right;
+  margin-top: 60px;
+  border-top: solid 1px;
+  padding-top: 10px;
+}
+.copy-credits h4 > a{
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+     -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+}
+.copy-credits h4 > a:hover{
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+     -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+}
+.copy-credits p{
+  font-size: 12px;
+  line-height: 19px;
+}
+.social-wrap{
+    list-style: none;
+    padding: 0;
+    margin-top: 80px;
+    text-align: center;
+    text-align: center;
+}
+.social-wrap li{
+    display: inline-block;
+    margin: 0 2px;
+}
+.social-wrap li a > img{
+    width: 24px;
+    opacity: 1;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.social-wrap li a:hover > img{
+    opacity: 0.5;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}

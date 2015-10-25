@@ -1,0 +1,52 @@
+.title-holder{
+	text-align: center;
+}
+.title-holder h1 span{
+	padding: 8px 5px 5px 15px;
+}
+.showcase-08 .section{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.showcase-08 .section a{
+	opacity: 0;
+}
+.showcase-08 .section:hover a{
+	opacity: 1;
+}
+.showcase-08-layer-01{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.showcase-08-layer-02{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.showcase-08-layer-03{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.showcase-08-layer-04{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.showcase-08 a{
+	opacity: 1;
+    -webkit-transition: all .8s linear;
+       -moz-transition: all .8s linear;
+        -ms-transition: all .8s linear;
+         -o-transition: all .8s linear;
+            transition: all .8s linear;
+}
+.showcase-08 a:hover{
+	opacity: 0.5;
+    -webkit-transition: all .8s linear;
+       -moz-transition: all .8s linear;
+        -ms-transition: all .8s linear;
+         -o-transition: all .8s linear;
+            transition: all .8s linear;
+}

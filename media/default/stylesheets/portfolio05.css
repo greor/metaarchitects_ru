@@ -1,0 +1,11 @@
+
+.works-grid-container{
+  padding: 0;
+  margin: 100px auto !important;
+}
+.works-grid-container .works-item {
+  margin: 1% !important;
+  padding: 0 !important;
+  width: 31.3% !important;
+}
+     

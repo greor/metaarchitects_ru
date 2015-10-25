@@ -1,0 +1,176 @@
+.white {
+  color: #ffffff;
+}
+.offwhite {
+  color: #f1f1f1;
+}
+.silver {
+  color: #dddee0;
+}
+.dark {
+  color: #292929;
+}
+.black {
+  color: #191919;
+}
+.grey {
+  color: #cccccc;
+}
+.color {
+  color: #ffc740;
+}
+.white-bg {
+  background-color: #ffffff;
+}
+.offwhite-bg {
+  background-color: #f1f1f1;
+}
+.silver-bg {
+  background-color: #dddee0;
+}
+.dark-bg {
+  background-color: #292929;
+}
+.black-bg {
+  background-color: #191919;
+}
+.grey-bg {
+  background-color: #cccccc;
+}
+.color-bg {
+  background-color: #ffc740;
+}
+a {
+  color: #191919;
+}
+a:hover {
+  color: #ffc740;
+}
+::selection {
+  background-color: #ffc740;
+  color: #ffffff;
+}
+::-moz-selection {
+  background-color: #ffc740;
+  color: #ffffff;
+}
+.btn-uber-color {
+  border-color: #ffc740;
+  color: #ffc740;
+}
+.btn-uber-color:hover {
+  border-color: #191919;
+  color: #191919;
+}
+.main-nav-menu li a.current-main-nav {
+  color: #ffc740 !important;
+}
+.main-nav-menu li a.main-nav-link:focus {
+  color: #ffffff;
+}
+.main-heading > span,
+.service-icon,
+.service-icon-wrap .row {
+  border-color: #cccccc;
+}
+.sub-nav a {
+  color: #777777;
+}
+.sub-nav a:hover {
+  color: #ffc740;
+}
+.sub-nav a:after {
+  color: #ffc740;
+}
+.features-slider-triggers a {
+  border-color: #ffc740;
+  color: #ffc740;
+}
+.features-slider-triggers a.features-triggered {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.team-block h4 {
+  border-color: #ffc740;
+}
+.mastfoot .social-nav li a {
+  color: #191919;
+}
+.mastfoot .social-nav li a:hover {
+  color: #ffc740;
+}
+#ws .price,
+#ws .price-specs {
+  border-color: #292929;
+}
+.works-item a:hover {
+  border-color: #292929;
+}
+.intro-05 h5 span,
+.intro-05 h1 span {
+  border-color: #ffc740;
+}
+.intro-08 .rotator-wrap span {
+  background-color: #ffc740;
+  color: #ffffff;
+}
+.redirector a > i {
+  border-color: #292929;
+  color: #292929;
+}
+.redirector a:hover > i {
+  border-color: #ffc740;
+  color: #ffc740;
+}
+.tabbable-line > .nav-tabs > li.active {
+  border-color: #ffc740;
+}
+.tabbable-line > .nav-tabs > li:hover {
+  border-color: #292929;
+}
+.tabbable-panel {
+  border-color: #292929;
+}
+.font1 {
+  font-family: 'Lekton', sans-serif;
+}
+.font2 {
+  font-family: 'Montserrat', sans-serif;
+}
+.font3 {
+  font-family: 'Raleway', sans-serif;
+}
+.font4 {
+  font-family: 'designova_hgr_regular', sans-serif;
+}
+.font4thin {
+  font-family: 'designova_hgr_thin', sans-serif;
+}
+.font4light {
+  font-family: 'designova_hgr_light', sans-serif;
+}
+.font4bold {
+  font-family: 'designova_hgr_bold', sans-serif;
+}
+.font4black {
+  font-family: 'designova_hgr_black', sans-serif;
+}
+body,
+p {
+  font-family: 'Raleway', sans-serif;
+}
+ul.slimmenu li a {
+  font-family: 'designova_hgr_bold', sans-serif;
+}
+.sub-nav a {
+  font-family: 'designova_hgr_light', sans-serif;
+}
+.credits dt {
+  font-family: 'Montserrat', sans-serif;
+}
+.credits dd {
+  font-family: 'Lekton', sans-serif;
+}
+ul.slimmenu li a {
+  font-family: 'Montserrat', sans-serif;
+}

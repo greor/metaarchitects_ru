@@ -1,0 +1,32 @@
+
+.wall-showcase{
+	margin: 60px auto 120px auto;
+}
+
+/* clearfix */
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+.works-item {
+  width: 25%;
+  height: 400px;
+  float: left;
+  background: #C09;
+  margin-top: 0;
+}
+
+.item:hover {
+  border-color: white;
+  cursor: pointer;
+}
+
+.works-item.w2 { width:  50%;  }
+.works-item.w4 { width:  100%; }
+
+.wall-showcase-item{
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

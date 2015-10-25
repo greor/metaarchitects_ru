@@ -1,0 +1,46 @@
+
+.parallax-random-grid{
+	margin-top: 80px;
+}
+
+/* clearfix */
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+
+.parallax-random-grid .works-item {
+  width:  25%;
+  position: absolute;
+  background: #C09;
+  margin-bottom: 130px;
+  margin-top: 20px; 
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+
+.parallax-random-grid .works-item.w2 { width:  33%; background: #9C0;
+  margin-bottom: 360px; margin-top: 50px; }
+.parallax-random-grid .works-item.w4 { width:  50%; background: #90C;
+  margin-bottom: 780px; margin-top: 70px; }
+
+
+.parallax-random-grid .gutter-sizer { width: 10%; }
+
+.works-item-fade{
+	opacity: 0.1;
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+
+.works-item-fade a{
+	display: none !important;
+}

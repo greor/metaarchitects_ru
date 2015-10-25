@@ -1,0 +1,71 @@
+
+/*showcase05*/
+.showcase05-carousel{
+	cursor: url("../images/drag.png") 40 40, crosshair;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.showcase05-carousel .item{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.showcase05-overlay{
+	opacity: 0;
+	background-color: rgba(255,255,255,0.4);
+	-webkit-transition: all 1s ease-in-out;
+	   -moz-transition: all 1s ease-in-out;
+		-ms-transition: all 1s ease-in-out;
+		 -o-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
+}
+.showcase05-carousel .item:hover .showcase05-overlay{
+	opacity: 1;
+	-webkit-transition: all 1s ease-in-out;
+	   -moz-transition: all 1s ease-in-out;
+		-ms-transition: all 1s ease-in-out;
+		 -o-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
+}
+.showcase05-overlay a{
+	cursor: url("../images/view.png") 40 40, crosshair;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.head-caps{
+	font-size: 64px;
+	line-height: 71px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.head-subline{
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 200;
+	margin-top: 5px;
+}
+.head-liner{
+	width: 80px;
+	height: 1px;
+    display: inline-block;
+}
+
+.owl-dots{
+	position: absolute;
+	bottom: 10%;
+	text-align: center;
+	width: 100%;
+}
+.owl-theme .owl-dots .owl-dot span{
+	background: #555;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+	background: #fff;
+}

@@ -1,0 +1,47 @@
+.showcase-03 .parallax-showcase-layer{
+}
+.showcase-03 .parallax-showcase-layer a{
+    padding-left: 10%;
+    padding-right: 10%;
+            cursor: url("../images/plus.png") 40 40, crosshair;
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background-color: transparent;
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+}
+.showcase-03 .parallax-showcase-layer a:hover{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(255,255,255,0.3);
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+}
+.showcase-03 .head-caps{
+    font-size: 64px;
+    line-height: 71px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.showcase-03 .head-subline{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 200;
+    margin-top: 5px;
+}
+ .showcase-03 .head-liner{
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+}
+

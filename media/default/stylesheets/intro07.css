@@ -1,0 +1,17 @@
+.intro07-bg{
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.intro07 .separator-section{
+	background-color: rgba(0,0,0,0.6);
+}
+.intro07 .features-slider-triggers{
+	margin-top: 30px;
+}
+.intro07 .features-slider-triggers a{
+	border-top: solid 5px;
+	padding: 0;
+	width: 50px;
+	height: 1px;
+}
