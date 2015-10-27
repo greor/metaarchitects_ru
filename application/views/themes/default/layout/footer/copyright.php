@@ -2,6 +2,6 @@
 
 	<div class="row">
 		<article class="col-md-12 text-center">
-			<p class="copyright font1 grey">Copyright &copy; 2015.</p>
+			<p class="copyright font1 grey"><?php echo $SITE['name']; ?> &copy; <?php echo date('Y'); ?>.</p>
 		</article>
 	</div>
