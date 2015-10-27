@@ -94,6 +94,18 @@
 				'class' => 'input-xlarge',
 			)),
 		));
+
+/**** parallax ****/
+
+		echo View_Admin::factory('form/image', array(
+			'field' => 'parallax',
+			'value' => $element->parallax,
+			'orm_helper' => $wrapper,
+			'errors' => $errors,
+			'labels' => $labels,
+			'required' => $required,
+// 			'help_text' => '195x195px',
+		));
 		
 /**** text ****/
 		

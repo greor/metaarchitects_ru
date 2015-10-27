@@ -7,13 +7,13 @@
 	<meta name="keywords" content="<?php echo HTML::chars($PAGE_META['keywords_tag']) ?>">
 	<meta name="description" content="<?php echo HTML::chars($PAGE_META['description_tag']) ?>">
 	
-	<?php if (0): ?>
-		<link rel="shortcut icon" href="images/favicon/favicon.ico">
-		<link rel="apple-touch-icon" sizes="57x57" href="images/touchicons/apple-touch-icon-57-precomposed" />
-		<link rel="apple-touch-icon" sizes="114x114" href="assets/touchicons/apple-touch-icon-114-precomposed" />
-		<link rel="apple-touch-icon" sizes="72x72" href="assets/touchicons/apple-touch-icon-72-precomposed" />
-		<link rel="apple-touch-icon" sizes="144x144" href="assets/touchicons/apple-touch-icon-144-precomposed" />
-	<?php endif; ?>
+<?php if (0): ?>
+	<link rel="shortcut icon" href="images/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="images/touchicons/apple-touch-icon-57-precomposed" />
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/touchicons/apple-touch-icon-114-precomposed" />
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/touchicons/apple-touch-icon-72-precomposed" />
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/touchicons/apple-touch-icon-144-precomposed" />
+<?php endif; ?>
 	
 	<link href="<?php echo $MEDIA; ?>bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>fonts/fonts.css" rel="stylesheet">
@@ -32,8 +32,6 @@
 	<script src="<?php echo $MEDIA; ?>less/less-1.7.3.min.js"></script>
 	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css" rel="stylesheet">
 
-
-
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900%7CMontserrat:400,700%7CLato:400,100,300,700,900%7CLekton:400,400italic,700' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
       <script src="<?php echo $MEDIA; ?>bootstrap/js/html5shiv.js"></script>
@@ -45,7 +43,9 @@
 	echo View_Theme::factory('layout/loader');
 ?>	  
 	<header class="masthead white-bg visible-lg">
-		<a href="index.html"><img class="main-logo" alt="" title="" src="<?php echo $MEDIA; ?>images/logo.png"/></a>
+		<a href="<?php echo URL::base(); ?>">
+			<img class="main-logo" alt="" title="" src="<?php echo $MEDIA; ?>images/logo.png"/>
+		</a>
 	</header>
 <?php
 	echo View_Theme::factory('layout/menu/top', array(
@@ -63,8 +63,14 @@
 			<div class="container">
 				<div class="row">
 					<article class="col-md-12 text-center">
-						<a href="index.html">
-							<img alt="" title="" class="img-responsive foot-logo" src="<?php echo $MEDIA; ?>images/logo.png"/>
+						<a href="<?php echo URL::base(); ?>">
+<?php
+							echo HTML::image($MEDIA.'images/logo.png', array(
+								'title' => $SITE['name'],
+								'alt' => $SITE['name'],
+								'class' => 'img-responsive foot-logo',
+							));
+?>						
 						</a>
 					</article>
 				</div>

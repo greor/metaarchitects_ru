@@ -11,6 +11,7 @@ class Model_Project extends ORM_Base {
 		return array(
 			'title' => 'Title',
 			'image' => 'Image',
+			'parallax' => 'Parallax',
 			'size' => 'Size',
 			'active' => 'Active',
 			'position' => 'Position',
@@ -33,6 +34,9 @@ class Model_Project extends ORM_Base {
 				array('max_length', array(':value', 255)),
 			),
 			'image' => array(
+				array('max_length', array(':value', 255)),
+			),
+			'parallax' => array(
 				array('max_length', array(':value', 255)),
 			),
 			'category' => array(

@@ -455,42 +455,6 @@ class Controller_Front extends Controller_Template {
 // 				'css' => array('assets/js/fancybox/jquery.fancybox.css'),
 // 				'js' => array('assets/js/fancybox/jquery.fancybox.pack.js'),
 // 			),
-// 			'revolutionslider' => array(
-// 				'css' => array('assets/js/revolutionslider/css/settings.css'),
-// 				'js' => array('assets/js/revolutionslider/js/jquery.themepunch.tools.min.js', 'assets/js/revolutionslider/js/jquery.themepunch.revolution.min.js'),
-// 			),
-// 			'bxslider' => array(
-// 				'css' => array('assets/js/bxslider/jquery.bxslider.css'),
-// 				'js' => array('assets/js/bxslider/jquery.bxslider.min.js'),
-// 			),
-// 			'parallax' => array(
-// 				'js' => array('assets/js/parallax/jquery.parallax-scroll.min.js'),
-// 			),
-// 			'isotope' => array(
-// 				'js' => array('assets/js/isotope/imagesloaded.pkgd.min.js', 'assets/js/isotope/isotope.pkgd.min.js'),
-// 			),
-// 			'forms_validate' => array(
-// 				'js' => array('assets/js/validate/jquery.validate.min.js'),
-// 			),
-// 			'forms_submit' => array(
-// 				'js' => array('assets/js/submit/jquery.form.min.js'),
-// 			),
-// 			'googlemaps' => array(
-// 				'js' => array('http://maps.google.com/maps/api/js?sensor=false', 'assets/js/googlemaps/jquery.gmap.min.js'),
-// 			),
-// 			'charts' => array(
-// 				'js' => array('assets/js/charts/chart.min.js', 'assets/js/charts/jquery.easypiechart.min.js'),
-// 			),
-// 			'counter' => array(
-// 				'js' => array('assets/js/counter/jQuerySimpleCounter.js'),
-// 			),
-// 			'ytplayer' => array(
-// 				'css' => array('assets/js/ytplayer/css/YTPlayer.css'),
-// 				'js' => array('assets/js/ytplayer/jquery.mb.YTPlayer.js'),
-// 			),
-// 			'twitter' => array(
-// 				'js' => array('assets/js/twitter/twitterfetcher.js'),
-// 			),
 		);
 	}
 

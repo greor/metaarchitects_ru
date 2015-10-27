@@ -4,82 +4,46 @@
 	  
 		<div class="row add-top-half">
 			<article class="text-center col-md-10 col-md-offset-1">
-				<a href="index.html"><img alt="" title="" src="<?php echo $MEDIA; ?>images/badge.png"/></a>
+				<a href="<?php echo URL::base(); ?>">
+					<img alt="" title="" src="<?php echo $MEDIA; ?>images/badge.png"/>
+				</a>
 				<p class="minimal-caps font4light black add-top-quarter">Portfolio of Edgar Uber, A Young Graphic Designer.</p>
 			</article>
 		</div>
 	
 		<div id="works-container" class="works-container works-masonry-container white-bg container clearfix">
-		
-			<div class="works-item works-item-one-third zoom logos branding">
-				<img alt="" title="" class="img-responsive" src="http://placehold.it/400x200"/>
-				<a class="venobox" data-gall="portfolio-gallery" href="http://placehold.it/700x700">
-					<div class="works-item-inner valign">
-						<h3 class="dark">Lightbox Images</h3>
-						<p class="dark"><span class="dark">Work Category</span></p>
-					</div>
-				</a>
-			</div>
-		
-			<div class="works-item works-item-one-third zoom branding web">
-				<img alt="" title="" class="img-responsive" src="http://placehold.it/400x300"/>
-				<a class="venobox" data-gall="portfolio-gallery" href="http://placehold.it/700x700">
-					<div class="works-item-inner valign">
-						<h3 class="dark">Lightbox Images</h3>
-						<p class="dark"><span class="dark">Work Category</span></p>
-					</div>
-				</a>
-			</div>
-		
-			<div class="works-item works-item-two-third info graphics web">
-				<img alt="" title="" class="img-responsive" src="http://placehold.it/400x400"/>
-				<a href="single-project.html">
-					<div class="works-item-inner valign">
-						<h3 class="dark">Project Info</h3>
-						<p class="dark"><span class="dark">Work Category</span></p>
-					</div>
-				</a>
-			</div>
-		
-			<div class="works-item works-item-one-third info web ui">
-				<img alt="" title="" class="img-responsive" src="http://placehold.it/400x450"/>
-				<a class="venobox" data-type="vimeo" href="http://vimeo.com/75976293">
-					<div class="works-item-inner valign">
-						<h3 class="dark">Lightbox Video</h3>
-						<p class="dark"><span class="dark">Work Category</span></p>
-					</div>
-				</a>
-			</div>
-		
-			<div class="works-item works-item-one-third zoom branding ui">
-				<img alt="" title="" class="img-responsive" src="http://placehold.it/400x500"/>
-				<a class="venobox" data-gall="portfolio-gallery" href="http://placehold.it/700x700">
-					<div class="works-item-inner valign">
-						<h3 class="dark">Lightbox Gallery</h3>
-						<p class="dark"><span class="dark">Work Category</span></p>
-					</div>
-				</a>
-			</div>
-		
+<?php
+		$page = Page_Route::page_by_name('projects');
+		$link_tpl = Page_Route::uri($page['id'], 'projects', array(
+			'element_id' => '{element_id}'
+		));
+		$orm_helper = ORM_Helper::factory('project');
+		foreach ($projects as $_item):
+			$_file = $orm_helper->file_uri('image', $_item->image);
+			$_thumb = Thumb::uri('projects_'.$_item->size, $_file);
+			$_link = str_replace('{element_id}', $_item->id, $link_tpl);
+?>		
 			<div class="works-item works-item-one-third info logos ui">
-				<img alt="" title="" class="img-responsive" src="http://placehold.it/400x600"/>
-				<a href="single-project.html">
+<?php
+				echo HTML::image($_thumb, array(
+					'title' => $_item->title,
+					'alt' => $_item->title,
+					'class' => 'img-responsive',
+				));
+?>			
+				<a href="<?php echo $_link; ?>">
 					<div class="works-item-inner valign">
-						<h3 class="dark">Project Info</h3>
-						<p class="dark"><span class="dark">Work Category</span></p>
+						<h3 class="dark"><?php echo $_item->title; ?></h3>
+<?php
+						if ( ! empty($_item->category)) {
+							echo '<p class="dark"><span class="dark">', $_item->category, '</span></p>';
+						}
+?>						
 					</div>
 				</a>
 			</div>
-		
-			<div class="works-item works-item-one-third zoom web logos">
-				<img alt="" title="" class="img-responsive" src="http://placehold.it/400x700"/>
-				<a class="venobox" data-gall="portfolio-gallery" href="http://placehold.it/700x700">
-					<div class="works-item-inner valign">
-						<h3 class="dark">Lightbox Gallery</h3>
-						<p class="dark"><span class="dark">Work Category</span></p>
-					</div>
-				</a>
-			</div>
-		
+<?php
+		endforeach;
+?>
 		</div>
 	</div>
