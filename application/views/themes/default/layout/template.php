@@ -24,12 +24,13 @@
 	<link href="<?php echo $MEDIA; ?>stylesheets/intro03.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/main.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/less-compiled.css" rel="stylesheet">
-	<link href="<?php echo $MEDIA; ?>stylesheets/main-bg.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/main-responsive.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/main-retina.css" rel="stylesheet">
-	<link rel="stylesheet/less" type="text/css" href="<?php echo $MEDIA; ?>less/color.less">
-	<link rel="stylesheet/less" type="text/css" href="<?php echo $MEDIA; ?>less/fonts.less">
+	
+	<link href="<?php echo $MEDIA; ?>less/color.less" rel="stylesheet/less" type="text/css">
+	<link href="<?php echo $MEDIA; ?>less/fonts.less" rel="stylesheet/less" type="text/css">
 	<script src="<?php echo $MEDIA; ?>less/less-1.7.3.min.js"></script>
+	
 	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css" rel="stylesheet">
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900%7CMontserrat:400,700%7CLato:400,100,300,700,900%7CLekton:400,400italic,700' rel='stylesheet' type='text/css'>
