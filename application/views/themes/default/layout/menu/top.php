@@ -1,51 +1,46 @@
-<?php defined('SYSPATH') or die('No direct script access.'); ?>
-
+<?php defined('SYSPATH') or die('No direct script access.'); 
+	
+	if (empty($menu)) {
+		return;
+	}
+?>
 	<section class="menu-panel fullheight">
 		<div class="row">
 			<article class="col-md-8 fullheight nav-list-holder menu-bg">
 				<div class="valign">
 					<nav class="nav-item-wrap">
 						<ul class="main-nav-menu main-nav-menu-effect font4light">
-							<li class="trigger-sub-nav">
-								<a data-sub-nav-target="01" class="main-nav-link white" href="#">promo</a>
-							</li>
-							<li class="trigger-sub-nav">
-								<a data-sub-nav-target="02" class="main-nav-link white" href="#">intro</a>
-							</li>
-		           
-							<li class="trigger-sub-nav">
-								<a data-sub-nav-target="03" class="main-nav-link white" href="#">works</a>
-							</li>
-							<li class="trigger-sub-nav">
-								<a data-sub-nav-target="04" class="main-nav-link white" href="#">pages</a>
-							</li> 
+<?php
+						$list = array();
+						foreach ($menu as $_id => $_item) {
+							$_key = str_pad($_id, 2, '0', STR_PAD_LEFT);
+							
+							echo '<li class="trigger-sub-nav">', HTML::anchor($_item['uri'], $_item['title'], array(
+								'target' => $_item['target'],
+								'class' => 'main-nav-link white',
+								'data-sub-nav-target' => $_key
+							)), '</li>';
+							
+							if ( ! empty($_item['sub'])) {
+								$_str = '<div class="sub-nav sub-nav-'.$_key.'">';
+								foreach ($_item['sub'] as $_k => $_v) {
+									$_str .= HTML::anchor($_v['uri'], $_v['title'], array(
+										'target' => $_v['target']
+									));
+								}
+								$_str .= '</div>';
+							}
+						}
+?>						
 						</ul>
 					</nav>
 				</div>
 			</article>
-		
 			<article class="col-md-4 fullheight sub-nav-holder black-bg">
 				<div class="valign">
-		
-					<div class="sub-nav sub-nav-01">
-						<a href="showcase01.html">curtains</a>
-						<a href="showcase02.html">split scroll</a>
-					</div>
-
-					<div class="sub-nav sub-nav-02">
-						<a href="index03.html">freelancer</a>
-						<a href="index11.html">fashion</a>
-					</div>
-
-					<div class="sub-nav sub-nav-03">
-						<a href="portfolio01.html">parallax</a>
-						<a href="portfolio03.html">masonry</a>
-					</div>
-
-					<div class="sub-nav sub-nav-04">
-						<a href="about.html">about</a>
-						<a href="pricing.html">pricing</a>
-					</div>
+<?php
+					echo $_str;
+?>
 				</div>
 			</article>
 		</div>

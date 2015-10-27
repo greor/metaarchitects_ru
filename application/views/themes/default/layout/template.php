@@ -7,7 +7,6 @@
 	<meta name="keywords" content="<?php echo HTML::chars($PAGE_META['keywords_tag']) ?>">
 	<meta name="description" content="<?php echo HTML::chars($PAGE_META['description_tag']) ?>">
 	
-	
 	<?php if (0): ?>
 		<link rel="shortcut icon" href="images/favicon/favicon.ico">
 		<link rel="apple-touch-icon" sizes="57x57" href="images/touchicons/apple-touch-icon-57-precomposed" />
@@ -15,7 +14,6 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="assets/touchicons/apple-touch-icon-72-precomposed" />
 		<link rel="apple-touch-icon" sizes="144x144" href="assets/touchicons/apple-touch-icon-144-precomposed" />
 	<?php endif; ?>
-	
 	
 	<link href="<?php echo $MEDIA; ?>bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>fonts/fonts.css" rel="stylesheet">
@@ -32,6 +30,7 @@
 	<link rel="stylesheet/less" type="text/css" href="<?php echo $MEDIA; ?>less/color.less">
 	<link rel="stylesheet/less" type="text/css" href="<?php echo $MEDIA; ?>less/fonts.less">
 	<script src="<?php echo $MEDIA; ?>less/less-1.7.3.min.js"></script>
+	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css" rel="stylesheet">
 
 
 
@@ -49,8 +48,12 @@
 		<a href="index.html"><img class="main-logo" alt="" title="" src="<?php echo $MEDIA; ?>images/logo.png"/></a>
 	</header>
 <?php
-	echo View_Theme::factory('layout/menu/top');
-	echo View_Theme::factory('layout/menu/mobile');
+	echo View_Theme::factory('layout/menu/top', array(
+		'menu' => $menu
+	));
+	echo View_Theme::factory('layout/menu/mobile', array(
+		'menu' => $menu
+	));
 ?>	
 	<section id="mastwrap" class="mastwrap">
 <?php
@@ -92,6 +95,8 @@
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/jquery.slimmenu.min.js"></script> 
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/isotope.js"></script>
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/venobox.min.js"></script>
+	
+	
 	<script src="<?php echo $MEDIA; ?>javascripts/custom/navmenu-init.js" ></script> 
 	<script src="<?php echo $MEDIA; ?>javascripts/custom/isotope-init.js"></script> 
 	<script src="<?php echo $MEDIA; ?>javascripts/custom/venobox-init.js"></script>

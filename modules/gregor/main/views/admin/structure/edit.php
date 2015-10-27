@@ -80,15 +80,15 @@
 		
 /**** megamenu ****/
 		
-		echo View_Admin::factory('form/control', array(
-			'field'    => 'megamenu',
-			'errors'   => $errors,
-			'labels'   => $labels,
-			'required' => $required,
-			'controls' => Form::hidden('megamenu', '').Form::checkbox('megamenu', '1', (bool) $page->megamenu, array(
-				'id' => 'megamenu_field',
-			)),
-		));
+// 		echo View_Admin::factory('form/control', array(
+// 			'field'    => 'megamenu',
+// 			'errors'   => $errors,
+// 			'labels'   => $labels,
+// 			'required' => $required,
+// 			'controls' => Form::hidden('megamenu', '').Form::checkbox('megamenu', '1', (bool) $page->megamenu, array(
+// 				'id' => 'megamenu_field',
+// 			)),
+// 		));
 
 /**** title ****/
 

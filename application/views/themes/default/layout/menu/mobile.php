@@ -1,34 +1,29 @@
-<?php defined('SYSPATH') or die('No direct script access.'); ?>
-
+<?php defined('SYSPATH') or die('No direct script access.'); 
+	if (empty($menu)) {
+		return;
+	}
+?>
 	<nav class="mobile-nav hidden-lg">
 		<ul class="slimmenu">
-			<li>
-				<a class="sub-collapser" href="">promo</a>
-				<ul>
-					<li><a class="black ease" href="showcase01.html">curtains</a></li>
-					<li><a class="black ease" href="showcase02.html">split scroll</a></li>
-				</ul>
-			</li> 
-			<li>
-				<a class="sub-collapser" href="">intro</a>
-				<ul>
-					<li><a class="black ease" href="index03.html">freelancer</a></li>
-					<li><a class="black ease" href="index11.html">fashion</a></li>
-				</ul>
-			</li>  
-			<li>
-				<a class="sub-collapser" href="">works</a>
-				<ul>
-					<li><a class="black ease" href="portfolio01.html">parallax</a></li>
-					<li><a class="black ease" href="portfolio03.html">masonry</a></li>
-				</ul>
-			</li> 
-			<li>
-				<a class="sub-collapser" href="">pages</a>
-				<ul>
-					<li><a class="black ease" href="about.html">about</a></li>
-					<li><a class="black ease" href="pricing.html">pricing</a></li>
-				</ul>
-			</li> 
+<?php
+		foreach ($menu as $_id => $_item) {
+			$_has_children =  ! empty($_item['sub']);
+			echo '<li>', HTML::anchor($_item['uri'], $_item['title'], array(
+				'target' => $_item['target'],
+				'class' => $_has_children ? 'sub-collapser' : '',
+			));
+			if ($_has_children) {
+				echo '<ul>';
+				foreach ($_item['sub'] as $_k => $_v) {
+					echo '<li>', HTML::anchor($_v['uri'], $_v['title'], array(
+						'class' => 'black ease',
+						'target' => $_v['target']
+					)), '</li>';
+				}
+				echo '</ul>';
+			}
+			echo '</li>';
+		}
+?>		
 		</ul>
 	</nav>
