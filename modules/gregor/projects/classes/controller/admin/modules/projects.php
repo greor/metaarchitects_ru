@@ -58,7 +58,7 @@ class Controller_Admin_Modules_Projects extends Controller_Admin_Front {
 
 		$list_url = Route::url( 'modules', array(
 			'controller' => 'projects',
-			'query'      => $query,
+			'query' => $query,
 		));
 		if ($this->is_cancel) {
 			Request::current()->redirect( $list_url );
@@ -92,8 +92,6 @@ class Controller_Admin_Modules_Projects extends Controller_Admin_Front {
 				}
 
 				$wrapper->save(Request::current()->post() + $_FILES);
-
-// 				Controller_Admin_Structure::clear_structure_cache();
 			} catch (ORM_Validation_Exception $e) {
 				$errors = $e->errors( '' );
 				if ( ! empty($errors['_files'])) {
@@ -127,8 +125,6 @@ class Controller_Admin_Modules_Projects extends Controller_Admin_Front {
 		}
 
 		if ($this->delete_element($wrapper)) {
-// 			Controller_Admin_Structure::clear_structure_cache();
-
 			Request::current()->redirect(Route::url('modules', array(
 				'controller' => 'projects',
 			)));
@@ -165,8 +161,6 @@ class Controller_Admin_Modules_Projects extends Controller_Admin_Front {
 					$wrapper->position_fix('position');
 				}
 			}
-
-// 			Controller_Admin_Structure::clear_structure_cache();
 		} catch (ORM_Validation_Exception $e) {
 			$errors = $e->errors( TRUE );
 			$this->template

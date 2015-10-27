@@ -9,10 +9,16 @@ class Model_Project extends ORM_Base {
 	public function labels()
 	{
 		return array(
-			'title'    => 'Title',
-			'image'    => 'Image',
-			'active'   => 'Active',
+			'title' => 'Title',
+			'image' => 'Image',
+			'size' => 'Size',
+			'active' => 'Active',
 			'position' => 'Position',
+			'category' => 'Category',
+			'text' => 'Text',
+			'title_tag' => 'Title tag',
+			'keywords_tag' => 'Keywords tag',
+			'description_tag' => 'Desription tag',
 		);
 	}
 
@@ -20,17 +26,32 @@ class Model_Project extends ORM_Base {
 	{
 		return array(
 			'id' => array(
-				array( 'digit' ),
+				array('digit'),
 			),
 			'title' => array(
-				array( 'not_empty' ),
-				array( 'max_length', array( ':value', 255 ) ),
+				array('not_empty'),
+				array('max_length', array(':value', 255)),
 			),
 			'image' => array(
-				array( 'max_length', array( ':value', 255 ) ),
+				array('max_length', array(':value', 255)),
+			),
+			'category' => array(
+				array('max_length', array(':value', 255)),
+			),
+			'size' => array(
+				array('max_length', array(':value', 255)),
 			),
 			'position' => array(
-				array( 'digit' ),
+				array('digit'),
+			),
+			'title_tag' => array(
+				array('max_length', array(':value', 255)),
+			),
+			'keywords_tag' => array(
+				array('max_length', array(':value', 255)),
+			),
+			'description_tag' => array(
+				array('max_length', array(':value', 255)),
 			),
 		);
 	}
@@ -39,10 +60,22 @@ class Model_Project extends ORM_Base {
 	{
 		return array(
 			TRUE => array(
-				array( 'trim' ),
+				array('trim'),
 			),
 			'title' => array(
-				array( 'strip_tags' ),
+				array('strip_tags'),
+			),
+			'category' => array(
+				array('strip_tags'),
+			),
+			'title_tag' => array(
+				array('strip_tags'),
+			),
+			'keywords_tag' => array(
+				array('strip_tags'),
+			),
+			'description_tag' => array(
+				array('strip_tags'),
 			),
 			'active' => array(
 				array(array($this, 'checkbox'))

@@ -121,14 +121,14 @@ Kohana::modules(array(
 		'a2'             => MODPATH.'wouterrr/a2',     // A2 module
 		'kohana-sitemap' => MODPATH.'kohana-sitemap',  // ThePixelDeveloper Sitemap module
 		
-		'gregor-core'       => MODPATH.'gregor/core',       // Common helpers
-		'gregor-email'      => MODPATH.'gregor/email',      // Swift Mailer
-		'gregor-thumb'      => MODPATH.'gregor/thumb',      // Image thumb helper
+		'gregor-core' => MODPATH.'gregor/core', // Common helpers
+		'gregor-email' => MODPATH.'gregor/email', // Swift Mailer
+		'gregor-thumb' => MODPATH.'gregor/thumb', // Image thumb helper
 		'gregor-orm-helper' => MODPATH.'gregor/orm-helper', // ORM Helper
-		'gregor-main'       => MODPATH.'gregor/main',       // Main module
+		'gregor-main' => MODPATH.'gregor/main', // Main module
+		'gregor-projects' => MODPATH.'gregor/projects', // Projects module
 		
 		
-// 		'gregor-projects'           => MODPATH.'gregor/projects',           // Projects module
 // 		'gregor-news-no-categories' => MODPATH.'gregor/news-no-categories', // News module without categories
 // 		'gregor-blog'               => MODPATH.'gregor/blog',               // Blog module
 // 		'gregor-promo'              => MODPATH.'gregor/promo',              // Promo module
