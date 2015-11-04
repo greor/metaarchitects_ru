@@ -8,6 +8,7 @@ CREATE TABLE `projects` (
 	`size` VARCHAR(255) NOT NULL DEFAULT '',
 	`category` VARCHAR(255) NOT NULL,
 	`text` TEXT NOT NULL,
+	`album_id` INT(11) NOT NULL,
 	`active` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0',
 	`position` INT(10) UNSIGNED NOT NULL,
 	`title_tag` VARCHAR(255) NOT NULL DEFAULT '',

@@ -6,6 +6,15 @@ class Model_Project extends ORM_Base {
 	protected $_deleted_column = 'delete_bit';
 	protected $_active_column = 'active';
 
+	protected $_belongs_to = array(
+		'photo_album' => array(
+			'model'       => 'photo_Category',
+			'foreign_key' => 'album_id',
+		),
+	);
+	
+	
+	
 	public function labels()
 	{
 		return array(
@@ -22,6 +31,7 @@ class Model_Project extends ORM_Base {
 			'title_tag' => 'Title tag',
 			'keywords_tag' => 'Keywords tag',
 			'description_tag' => 'Desription tag',
+			'album_id' => 'Photo album',
 		);
 	}
 
@@ -64,6 +74,9 @@ class Model_Project extends ORM_Base {
 			),
 			'description_tag' => array(
 				array('max_length', array(':value', 255)),
+			),
+			'album_id' => array(
+				array('digit'),
 			),
 		);
 	}

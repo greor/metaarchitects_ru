@@ -102,9 +102,15 @@ class Controller_Admin_Modules_Projects extends Controller_Admin_Front {
 		}
 
 		if ( ! empty($errors) OR $submit != 'save_and_exit') {
+			$photo_albums = ORM::factory('photo_Category')
+				->find_all()
+				->as_array('id', 'title');
+			
+			
 			$this->template
 				->set_filename('modules/projects/edit')
 				->set('errors', $errors)
+				->set('photo_albums', $photo_albums)
 				->set('wrapper', $wrapper);
 		} else {
 			Request::current()->redirect( $list_url );

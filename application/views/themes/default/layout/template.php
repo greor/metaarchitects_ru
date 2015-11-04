@@ -20,17 +20,15 @@
 	<link href="<?php echo $MEDIA; ?>stylesheets/pace.preloader.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/slimmenu.css" rel="stylesheet"/>
 	<link href="<?php echo $MEDIA; ?>stylesheets/navmenu.css" rel="stylesheet">
-	<link href="<?php echo $MEDIA; ?>stylesheets/venobox.css" rel="stylesheet" />
-	<link href="<?php echo $MEDIA; ?>stylesheets/intro03.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/main.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/less-compiled.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/main-responsive.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/main-retina.css" rel="stylesheet">
-	
-	<link href="<?php echo $MEDIA; ?>less/color.less" rel="stylesheet/less" type="text/css">
-	<link href="<?php echo $MEDIA; ?>less/fonts.less" rel="stylesheet/less" type="text/css">
-	<script src="<?php echo $MEDIA; ?>less/less-1.7.3.min.js"></script>
-	
+<?php
+	foreach ($CSS as $_css) {
+		echo HTML::style($_css);
+	} 
+?>
 	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css" rel="stylesheet">
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900%7CMontserrat:400,700%7CLato:400,100,300,700,900%7CLekton:400,400italic,700' rel='stylesheet' type='text/css'>
@@ -100,13 +98,12 @@
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/jquery.touchSwipe.js"></script>
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/waypoints.min.js" ></script> 
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/jquery.slimmenu.min.js"></script> 
-	<script src="<?php echo $MEDIA; ?>javascripts/libs/isotope.js"></script>
-	<script src="<?php echo $MEDIA; ?>javascripts/libs/venobox.min.js"></script>
-	
-	
+<?php
+	foreach ($JS as $_js) {
+		echo HTML::script($_js);
+	} 
+?>
 	<script src="<?php echo $MEDIA; ?>javascripts/custom/navmenu-init.js" ></script> 
-	<script src="<?php echo $MEDIA; ?>javascripts/custom/isotope-init.js"></script> 
-	<script src="<?php echo $MEDIA; ?>javascripts/custom/venobox-init.js"></script>
 	<script src="<?php echo $MEDIA; ?>javascripts/custom/main.js" ></script> 
 </body>
 </html>

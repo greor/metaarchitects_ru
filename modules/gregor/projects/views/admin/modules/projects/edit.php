@@ -132,6 +132,20 @@
 				'class' => 'input-xlarge',
 			)),
 		));
+
+/**** album_id ****/
+		
+		echo View_Admin::factory('form/control', array(
+			'field'    => 'album_id',
+			'errors'   => $errors,
+			'labels'   => $labels,
+			'required' => $required,
+			'controls' => Form::select('album_id', array(0 => __('- No album -')) + $photo_albums, (int) $element->album_id, array(
+				'id'     => 'album_id_field',
+				'class'  => 'input-xlarge',
+			)),
+		));		
+		
 		
 /**** text ****/
 		

@@ -451,10 +451,45 @@ class Controller_Front extends Controller_Template {
 	private function _tpl_plugins()
 	{
 		return array(
-// 			'fancybox' => array(
-// 				'css' => array('assets/js/fancybox/jquery.fancybox.css'),
-// 				'js' => array('assets/js/fancybox/jquery.fancybox.pack.js'),
-// 			),
+			'isotope' => array(
+				'js' => array('javascripts/libs/isotope.js', 'javascripts/custom/isotope-init.js'),
+			),
+			'venobox' => array(
+				'css' => array('stylesheets/venobox.css'),
+				'js' => array('javascripts/libs/venobox.min.js', 'javascripts/custom/venobox-init.js'),
+			),
+			'parallax' => array(
+				'css' => array('stylesheets/parallax.css'),
+				'js' => array('javascripts/libs/jquery.parallax-1.1.3.js', 'javascripts/custom/parallax-init.js'),
+			),
+			'owl' => array(
+				'css' => array('stylesheets/owl.carousel.css', 'stylesheets/owl.theme.css'),
+				'js' => array('javascripts/libs/owl.carousel.js', 'javascripts/custom/owl-init.js'),
+			),
+			'bxslider' => array(
+				'css' => array('stylesheets/jquery.bxslider.css'),
+				'js' => array('javascripts/libs/jquery.bxslider.min.js'),
+			),
+			'imagesloaded' => array(
+				'js' => array('javascripts/libs/imagesloaded.pkgd.min.js'),
+			),
+			'packery' => array(
+				'js' => array('javascripts/libs/packery.pkgd.min.js', 'javascripts/custom/packery-wall-init.js'),
+			),
+
+			
+			
+			
+			'page_home' => array(
+				'css' => array('stylesheets/intro03.css'),
+			),
+			'page_project' => array(
+				'css' => array('stylesheets/intro12.css'),
+			),
+			
+			
+			
+			
 		);
 	}
 

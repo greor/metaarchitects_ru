@@ -125,5 +125,31 @@ return array(
 		),
 		'quality' => 90
 	),
+	'list_445x380' => array(
+		'path' => 'upload/images/',
+		'resize' => array(
+			'width' => 445,
+			'height' => 445,
+			'master' => Image::INVERSE,
+		),
+		'crop' => array(
+			'width' => 445,
+			'height' => 445,
+		),
+		'quality' => 90
+	),
+	'list_700x600' => array(
+		'path' => 'upload/images/',
+		'resize' => array(
+			'width' => 700,
+			'height' => 600,
+			'master' => Image::INVERSE,
+		),
+		'crop' => array(
+			'width' => 700,
+			'height' => 600,
+		),
+		'quality' => 90
+	),
 	
 );

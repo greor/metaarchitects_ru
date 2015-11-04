@@ -26,21 +26,39 @@
 				</article>
 			</div>
 		</div>
-		
-<?php if (0): ?>
-		<div class="container">
-			<div id="wall-showcase" class="wall-showcase">
-				<!-- start : works-item -->
-				<div class="works-item wall-showcase-item product-showcase-item-01 w2 zoom web ui">
-					<a class="venobox" data-gall="portfolio-gallery" href="http://placehold.it/700x600">
-						<div class="works-item-inner valign">
-							<h3 class="dark font4">Image Title</h3>
-							<p class="dark"><span class="dark font1">subtitle</span></p>
-						</div>
-					</a>
+<?php
+		if ( ! empty($photo)):
+?>		
+			<div class="container">
+				<div id="wall-showcase" class="wall-showcase">
+<?php
+				$orm_helper = ORM_Helper::factory('photo');
+				$url_base = URL::base();
+				foreach ($photo as $_item):
+					$_src = $orm_helper->file_uri('image', $_item->image);
+					$_thumb = $url_base.Thumb::uri('list_445x380', $_src);
+					$_img = $url_base.Thumb::uri('list_700x600', $_src);
+?>				
+					<div class="works-item wall-showcase-item w2 zoom web ui" style="background: url(<?php echo $_thumb; ?>)">
+						<a class="venobox" data-gall="portfolio-gallery" href="<?php echo $_img; ?>">
+							<div class="works-item-inner valign">
+								<h3 class="dark font4"><?php echo HTML::chars($_item->title); ?></h3>
+<?php
+								if ( ! empty($_item->text)):
+?>								
+									<p class="dark"><span class="dark font1"><?php echo HTML::chars($_item->text); ?></span></p>
+<?php
+								endif;
+?>								
+							</div>
+						</a>
+					</div>
+<?php
+				endforeach;
+?>					
 				</div>
-				<!-- end : works-item -->
 			</div>
-		</div>
-<?php endif; ?>	
+<?php
+		endif;
+?>		
 	</section>

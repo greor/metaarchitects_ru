@@ -7,4 +7,6 @@ return array(
 	'Add project' => 'Добавить проект',
 	'Edit project' => 'Редактировать проект',
 	'Size' => 'Размер',
+	'Photo album' => 'Фото альбом',
+	'- No album -' => 'Нет фото',
 );

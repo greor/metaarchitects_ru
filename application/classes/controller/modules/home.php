@@ -6,7 +6,9 @@ class Controller_Modules_Home extends Controller_Front {
 
 	public function action_index() {
 		
-		$this->switch_on_plugin('counter');
+		$this->switch_on_plugin('page_home');
+		$this->switch_on_plugin('isotope');
+		$this->switch_on_plugin('venobox');
 		
 		$this->template
 // 			->set('promo', $this->_get_promo())

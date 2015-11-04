@@ -26,7 +26,22 @@ class Controller_Modules_Projects extends Controller_Front {
 			throw new HTTP_Exception_404();
 		}
 		
+		$photo = $orm->photo_album
+			->photo
+			->find_all()
+			->as_array();
+		
 		$this->template
-			->set('orm', $orm);
+			->set('orm', $orm)
+			->set('photo', $photo);
+		
+			
+		$this->switch_on_plugin('page_project');
+		$this->switch_on_plugin('venobox');
+		$this->switch_on_plugin('parallax');
+		$this->switch_on_plugin('owl');
+		$this->switch_on_plugin('bxslider');
+		$this->switch_on_plugin('imagesloaded');
+		$this->switch_on_plugin('packery');
 	}
 }

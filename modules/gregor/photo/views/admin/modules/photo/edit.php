@@ -89,16 +89,16 @@
 
 /**** text ****/
 
-// 		echo View_Admin::factory('form/control', array(
-// 			'field'    => 'text',
-// 			'errors'   => $errors,
-// 			'labels'   => $labels,
-// 			'required' => $required,
-// 			'controls' => Form::textarea('text', $element->text, array(
-// 				'id'      => 'text_field',
-// 				'class'   => 'text_editor',
-// 			)),
-// 		));
+		echo View_Admin::factory('form/control', array(
+			'field'    => 'text',
+			'errors'   => $errors,
+			'labels'   => $labels,
+			'required' => $required,
+			'controls' => Form::textarea('text', $element->text, array(
+				'id'      => 'text_field',
+				'class'   => 'text_editor_native',
+			)),
+		));
 
 ?>
 		<div class="form-actions">
