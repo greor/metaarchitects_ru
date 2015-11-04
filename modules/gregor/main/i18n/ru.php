@@ -173,4 +173,10 @@ return array(
 	'channel_main' => 'Основной канал',
 	'Delete file' => 'Удалить файл',
 	'Open in new window' => 'Открыть в новом окне',
+	
+	'Parallax title' => 'Заголовок (Parallax)',
+	'Parallax descr' => 'Описание (Parallax)',
+	
+	
+	
 );

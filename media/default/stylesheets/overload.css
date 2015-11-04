@@ -5,3 +5,11 @@ p {
 	font-size: 14px;
 	line-height: 24px;
 }
+.menu-bg {
+	background: #888;
+}
+.parallax-my-bg {
+	background: #fff;
+	display: inline-block;
+	padding: 0 10px;
+}

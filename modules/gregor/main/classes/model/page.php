@@ -27,7 +27,9 @@ class Model_Page extends ORM_Base {
 			'uri' => 'URI segment',
 			'title' => 'Title',
 			'megamenu' => 'MegaMenu',
-			'image' => 'Image',
+			'image' => 'Parallax',
+			'parallax_title' => 'Parallax title',
+			'parallax_descr' => 'Parallax descr',
 			'text' => 'Text',
 			'type' => 'Page type',
 			'status' => 'Page status',
@@ -65,6 +67,12 @@ class Model_Page extends ORM_Base {
 				array('max_length', array(':value', 255)),
 			),
 			'image' => array(
+				array('max_length', array(':value', 255)),
+			),
+			'parallax_title' => array(
+				array('max_length', array(':value', 255)),
+			),
+			'parallax_descr' => array(
 				array('max_length', array(':value', 255)),
 			),
 			'type' => array(

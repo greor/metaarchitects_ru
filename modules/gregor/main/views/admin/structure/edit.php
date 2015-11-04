@@ -105,16 +105,41 @@
 		
 /**** image ****/
 
-// 		echo View_Admin::factory('form/image', array(
-// 			'field'          => 'image',
-// 			'value'          => $page->image,
-// 			'orm_helper'     => $page_wrapper,
-// 			'errors'         => $errors,
-// 			'labels'         => $labels,
-// 			'required'       => $required,
-// 		));
+		echo View_Admin::factory('form/image', array(
+			'field'          => 'image',
+			'value'          => $page->image,
+			'orm_helper'     => $page_wrapper,
+			'errors'         => $errors,
+			'labels'         => $labels,
+			'required'       => $required,
+		));
 
-
+/**** parallax_title ****/
+		
+		echo View_Admin::factory('form/control', array(
+			'field'    => 'parallax_title',
+			'errors'   => $errors,
+			'labels'   => $labels,
+			'required' => $required,
+			'controls' => Form::input('parallax_title', $page->parallax_title, array(
+				'id'     => 'parallax_title_field',
+				'class'  => 'input-xlarge',
+			)),
+		));
+		
+/**** parallax_descr ****/
+		
+		echo View_Admin::factory('form/control', array(
+			'field'    => 'parallax_descr',
+			'errors'   => $errors,
+			'labels'   => $labels,
+			'required' => $required,
+			'controls' => Form::input('parallax_descr', $page->parallax_descr, array(
+				'id'     => 'parallax_descr_field',
+				'class'  => 'input-xlarge',
+			)),
+		));
+		
 /**** text ****/
 
 		echo View_Admin::factory('form/control', array(

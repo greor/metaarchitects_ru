@@ -68,6 +68,8 @@ CREATE TABLE `pages` (
 	`title` VARCHAR(255) NOT NULL DEFAULT '',
 	`megamenu` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0',
 	`image` VARCHAR(255) NOT NULL DEFAULT '',
+	`parallax_title` VARCHAR(255) NOT NULL DEFAULT '',
+	`parallax_descr` VARCHAR(255) NOT NULL DEFAULT '',
 	`text` TEXT NOT NULL,
 	`type` ENUM('static','module','page','url') NOT NULL DEFAULT 'static',
 	`data` TEXT NOT NULL,
