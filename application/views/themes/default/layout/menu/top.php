@@ -15,12 +15,7 @@
 						foreach ($menu as $_id => $_item) {
 							$_key = str_pad($_id, 2, '0', STR_PAD_LEFT);
 							
-							echo '<li class="trigger-sub-nav">', HTML::anchor($_item['uri'], $_item['title'], array(
-								'target' => $_item['target'],
-								'class' => 'main-nav-link white',
-								'data-sub-nav-target' => $_key
-							)), '</li>';
-							
+							$_has_childrens = FALSE;
 							if ( ! empty($_item['sub'])) {
 								$_str = '<div class="sub-nav sub-nav-'.$_key.'">';
 								foreach ($_item['sub'] as $_k => $_v) {
@@ -29,7 +24,16 @@
 									));
 								}
 								$_str .= '</div>';
+								$_has_childrens = TRUE;
 							}
+							
+							echo '<li class="trigger-sub-nav">', HTML::anchor($_item['uri'], $_item['title'], array(
+								'target' => $_item['target'],
+								'class' => 'main-nav-link white',
+								'data-sub-nav-target' => $_key,
+								'data-has-childrens' => $_has_childrens
+							)), '</li>';
+							
 						}
 ?>						
 						</ul>

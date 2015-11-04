@@ -30,6 +30,8 @@ class Controller_Page extends Controller_Front {
 		$this->title = $orm->title;
 		$this->template
 			->set('page', $orm);
+		
+		$this->switch_on_plugin('parallax');
 	}
 
 	public function action_page()

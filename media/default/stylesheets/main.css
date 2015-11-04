@@ -592,7 +592,6 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
                     transition: all .4s ease-in-out;
         }
         .info a:hover{
-            cursor: url("../images/plus.png") 40 40, crosshair;
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
                 -ms-transition: all .4s ease-in-out;
@@ -600,7 +599,6 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
                     transition: all .4s ease-in-out;
         }
         .zoom a:hover{
-            cursor: url("../images/zoom.png") 40 40, crosshair;
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
                 -ms-transition: all .4s ease-in-out;

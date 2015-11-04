@@ -62,19 +62,6 @@
 			<div class="container">
 				<div class="row">
 					<article class="col-md-12 text-center">
-						<a href="<?php echo URL::base(); ?>">
-<?php
-							echo HTML::image($MEDIA.'images/logo.png', array(
-								'title' => $SITE['name'],
-								'alt' => $SITE['name'],
-								'class' => 'img-responsive foot-logo',
-							));
-?>						
-						</a>
-					</article>
-				</div>
-				<div class="row">
-					<article class="col-md-12 text-center">
 						<div class="inner-spacer color-bg"></div>
 <?php
 						echo View_Theme::factory('layout/footer/social');

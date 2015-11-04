@@ -61,7 +61,6 @@
 
 .ms-overlay a{
     display: block;
-            cursor: url("../images/plus.png") 40 40, crosshair;
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
                 -ms-transition: all .4s ease-in-out;
