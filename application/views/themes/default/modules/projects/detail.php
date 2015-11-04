@@ -1,13 +1,18 @@
 <?php defined('SYSPATH') or die('No direct script access.'); 
 
 	$orm_helper = ORM_Helper::factory('project');
+	$parralax_image = '';
 	if ( ! empty($orm->parallax)) {
-		$src = $orm_helper->file_uri('parallax', $orm->parallax);
-		$parallax = URL::base().Thumb::uri('parallax', $src);
-		
-		echo '<section class="page-fold wallpaper subtle fullheight" style="font-size: 0; background-image: url(', $parallax, ')">', 
-			$orm->title, '</section>';
+		$parralax_image = $orm_helper->file_uri('parallax', $orm->parallax);
 	}
+	
+	echo View_Theme::factory('layout/parallax', array(
+		'item' => array(
+			'image' => $parralax_image,
+			'title' => $orm->parallax_title,
+			'descriprion' => $orm->parallax_descr,
+		)
+	));
 ?>
 	<section class="page-section white-bg">
 		<div class="container">

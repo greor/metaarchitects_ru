@@ -1,5 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.'); 
 
+
 	if ( ! empty($item['image'])) {
 		$parallax = URL::base().Thumb::uri('parallax', $item['image']);
 	
@@ -14,7 +15,7 @@
 									<h1 class="page-heading font4bold black parallax-my-bg">', $item['title'], '</h1>
 				';
 				
-			if ( ! empty($page->parallax_descr)) {
+			if ( ! empty($item['descriprion'])) {
 				echo '<br><h4 class="sub-heading-minor font4light dark parallax-my-bg">', $item['descriprion'], '</h4>';
 			}
 			echo '

@@ -106,6 +106,32 @@
 			'required' => $required,
 // 			'help_text' => '195x195px',
 		));
+
+/**** parallax_title ****/
+		
+		echo View_Admin::factory('form/control', array(
+			'field' => 'parallax_title',
+			'errors' => $errors,
+			'labels' => $labels,
+			'required' => $required,
+			'controls' => Form::input('parallax_title', $element->parallax_title, array(
+				'id' => 'parallax_title_field',
+				'class' => 'input-xlarge',
+			)),
+		));
+
+/**** parallax_descr ****/
+		
+		echo View_Admin::factory('form/control', array(
+			'field' => 'parallax_descr',
+			'errors' => $errors,
+			'labels' => $labels,
+			'required' => $required,
+			'controls' => Form::input('parallax_descr', $element->parallax_descr, array(
+				'id' => 'parallax_descr_field',
+				'class' => 'input-xlarge',
+			)),
+		));
 		
 /**** text ****/
 		

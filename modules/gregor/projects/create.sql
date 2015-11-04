@@ -3,6 +3,8 @@ CREATE TABLE `projects` (
 	`title` VARCHAR(255) NOT NULL DEFAULT '',
 	`image` VARCHAR(255) NOT NULL DEFAULT '',
 	`parallax` VARCHAR(255) NOT NULL DEFAULT '',
+	`parallax_title` VARCHAR(255) NOT NULL DEFAULT '',
+	`parallax_descr` VARCHAR(255) NOT NULL DEFAULT '',
 	`size` VARCHAR(255) NOT NULL DEFAULT '',
 	`category` VARCHAR(255) NOT NULL,
 	`text` TEXT NOT NULL,
