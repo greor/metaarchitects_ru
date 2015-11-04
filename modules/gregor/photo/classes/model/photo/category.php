@@ -51,7 +51,6 @@ class Model_Photo_Category extends ORM_Base {
 				array( 'alpha_dash' ),
 			),
 			'image' => array(
-				array( 'not_empty' ),
 				array( 'max_length', array( ':value', 255 ) ),
 			),
 // 			'group' => array(

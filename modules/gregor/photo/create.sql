@@ -1,4 +1,4 @@
-CREATE TABLE `prefix_photo` (
+CREATE TABLE `photo` (
 	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	`category_id` INT(10) UNSIGNED NOT NULL DEFAULT '0',
 	`title` VARCHAR(255) NOT NULL DEFAULT '',
@@ -19,7 +19,7 @@ COLLATE='utf8_general_ci'
 ENGINE=MyISAM
 ROW_FORMAT=DEFAULT;
 
-CREATE TABLE `prefix_photo_categories` (
+CREATE TABLE `photo_categories` (
 	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	`page_id` INT(11) NOT NULL DEFAULT '0',
 	`status` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0',
