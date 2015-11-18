@@ -23,7 +23,7 @@
 			$_thumb = Thumb::uri('projects_'.$_item->size, $_file);
 			$_link = str_replace('{element_id}', $_item->id, $link_tpl);
 ?>		
-			<div class="works-item works-item-one-third info logos ui">
+			<div class="works-item works-item-<?php echo $_item->size; ?> info logos ui">
 <?php
 				echo HTML::image($_thumb, array(
 					'title' => $_item->title,

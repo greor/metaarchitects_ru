@@ -21,32 +21,6 @@ return array(
 	),
 	
 	
-	'projects_400x200' => array(
-		'path' => 'upload/images/',
-		'resize' => array(
-			'width' => 400,
-			'height' => 200,
-			'master' => Image::INVERSE,
-		),
-		'crop' => array(
-			'width' => 400,
-			'height' => 200,
-		),
-		'quality' => 90
-	),
-	'projects_400x300' => array(
-		'path' => 'upload/images/',
-		'resize' => array(
-			'width' => 400,
-			'height' => 300,
-			'master' => Image::INVERSE,
-		),
-		'crop' => array(
-			'width' => 400,
-			'height' => 300,
-		),
-		'quality' => 90
-	),
 	'projects_400x400' => array(
 		'path' => 'upload/images/',
 		'resize' => array(
@@ -60,58 +34,34 @@ return array(
 		),
 		'quality' => 90
 	),
-	'projects_400x450' => array(
+	'projects_400x825' => array(
 		'path' => 'upload/images/',
 		'resize' => array(
 			'width' => 400,
-			'height' => 450,
+			'height' => 825,
 			'master' => Image::INVERSE,
 		),
 		'crop' => array(
 			'width' => 400,
-			'height' => 450,
+			'height' => 825,
 		),
 		'quality' => 90
 	),
-	'projects_400x500' => array(
+	'projects_800x387' => array(
 		'path' => 'upload/images/',
 		'resize' => array(
-			'width' => 400,
-			'height' => 500,
+			'width' => 800,
+			'height' => 387,
 			'master' => Image::INVERSE,
 		),
 		'crop' => array(
-			'width' => 400,
-			'height' => 500,
+			'width' => 800,
+			'height' => 387,
 		),
 		'quality' => 90
 	),
-	'projects_400x600' => array(
-		'path' => 'upload/images/',
-		'resize' => array(
-			'width' => 400,
-			'height' => 600,
-			'master' => Image::INVERSE,
-		),
-		'crop' => array(
-			'width' => 400,
-			'height' => 600,
-		),
-		'quality' => 90
-	),
-	'projects_400x700' => array(
-		'path' => 'upload/images/',
-		'resize' => array(
-			'width' => 400,
-			'height' => 700,
-			'master' => Image::INVERSE,
-		),
-		'crop' => array(
-			'width' => 400,
-			'height' => 700,
-		),
-		'quality' => 90
-	),
+	
+	
 	'parallax' => array(
 		'path' => 'upload/images/',
 		'resize' => array(

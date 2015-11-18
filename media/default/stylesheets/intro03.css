@@ -1,12 +1,21 @@
 
 .works-masonry-container{
-    padding: 0;
-  margin: 60px auto 100px auto !important;
+	padding: 0;
+	margin: 60px auto 100px auto !important;
 }
+.works-masonry-container .works-item-sizer,
 .works-masonry-container .works-item {
-  margin: 1% !important;
-  padding: 0 !important;
-  width: 31.3% !important;
+	margin: 1% !important;
+	padding: 0 !important;
+	width: 31.3% !important;
 }
-      
+.works-masonry-container .works-item-400x400 {
+	width: 31.3% !important;
+}
+.works-masonry-container .works-item-400x800 {
+	width: 31.3% !important;
+}
+.works-masonry-container .works-item-800x387 {
+	width: 64.6% !important;
+}
       
