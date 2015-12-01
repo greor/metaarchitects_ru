@@ -1,65 +1,55 @@
-
 /*global $:false */
 /*global window: false */
 
-(function(){
-  "use strict";
+(function() {
+	"use strict";
 
+	$(function($) {
 
-$(function ($) {
+		$(window).load(function() {
 
+			var $container = $('.works-container');
 
-    $(window).load(function(){
-    
+			$container.isotope({
+				// options
+				itemSelector : '.works-item',
+				layoutMode : 'masonry',
+				transitionDuration : '0.8s'
+			});
 
-        
-        var $container = $('.works-container');
+			var filter_marker = false;
+			$('.works-filter li a').click(function() {
+				filter_marker = true;
+				
+				$('.works-filter li a').removeClass('active');
+				$(this).addClass('active');
 
+				var selector = $(this).attr('data-filter');
+				$('.works-container').isotope({
+					filter : selector
+				});
+				setTimeout(function(){
+					filter_marker = false;
+				}, 0);
+				return false;
+			});
 
-        $container.isotope({
-          // options
-          itemSelector: '.works-item',
-          layoutMode: 'masonry',
-          transitionDuration:'0.8s'
-        });
+			// window resize and layout regenerate
+			$(window).resize(function() {
+				if (filter_marker) {
+					$container.isotope({
+						itemSelector : '.works-item',
+						layoutMode : 'masonry',
+						transitionDuration : '0.8s'
+					});
+				}
+			});
 
+		});
 
-        $('.works-filter li a').click(function(){
-        $('.works-filter li a').removeClass('active');
-        $(this).addClass('active');
-
-        var selector = $(this).attr('data-filter');
-              $('.works-container').isotope({ filter: selector });
-              return false;
-        });
-
-        // window resize and layout regenerate
-        $(window).resize(function() {
-             $container.isotope({
-              // options
-              itemSelector: '.works-item',
-              layoutMode: 'masonry',
-              transitionDuration:'0.8s'
-            });
-
-        });
-
-    });
-
-      
-        
-   
-});
-// $(function ($)  : ends
+	});
+	// $(function ($) : ends
 
 })();
-//  JSHint wrapper $(function ($)  : ends
-
-
-
-
-
-
-
-  
+// JSHint wrapper $(function ($) : ends
 

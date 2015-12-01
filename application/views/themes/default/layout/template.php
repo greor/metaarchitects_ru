@@ -45,6 +45,13 @@
 		<a href="<?php echo URL::base(); ?>">
 			<img class="main-logo" alt="" title="" src="<?php echo $MEDIA; ?>images/logo.png"/>
 		</a>
+<?php
+		if ( ! empty($TOP_FILTER)) {
+			echo View_Theme::factory('layout/filter', array(
+				'filter' => $TOP_FILTER
+			));
+		}
+?>		
 	</header>
 <?php
 	echo View_Theme::factory('layout/menu/top', array(

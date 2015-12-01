@@ -55,10 +55,20 @@ class Controller_Modules_Home extends Controller_Front {
 	private function _get_projects()
 	{
 		$config = Kohana::$config->load('_projects.size');
-		return ORM::factory('project')
+		$_projects = ORM::factory('project')
 			->where('size', 'IN', $config)
-			->find_all()
-			->as_array();
+			->find_all();
+		
+		$result = array();
+		foreach ($_projects as $_orm) {
+			$_k = Ku_Text::slug($_orm->category);
+			if ( ! array_key_exists($_k, $this->top_filter)) {
+				$this->top_filter[$_k] = $_orm->category;
+			}
+			$result[] = $_orm;
+		}
+		
+		return $result;
 	}
 	
 }
