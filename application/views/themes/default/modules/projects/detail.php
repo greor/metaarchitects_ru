@@ -37,7 +37,7 @@
 				foreach ($photo as $_item):
 					$_src = $orm_helper->file_uri('image', $_item->image);
 					$_thumb = $url_base.Thumb::uri('list_445x380', $_src);
-					$_img = $url_base.Thumb::uri('list_700x600', $_src);
+					$_img = $url_base.Thumb::uri('list_800x600', $_src);
 ?>				
 					<div class="works-item wall-showcase-item w2 zoom web ui" style="background: url(<?php echo $_thumb; ?>)">
 						<a class="venobox" data-gall="portfolio-gallery" href="<?php echo $_img; ?>">

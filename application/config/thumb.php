@@ -88,15 +88,15 @@ return array(
 		),
 		'quality' => 90
 	),
-	'list_700x600' => array(
+	'list_800x600' => array(
 		'path' => 'upload/images/',
 		'resize' => array(
-			'width' => 700,
+			'width' => 800,
 			'height' => 600,
-			'master' => Image::INVERSE,
+			'master' => Image::WIDTH,
 		),
 		'crop' => array(
-			'width' => 700,
+			'width' => 800,
 			'height' => 600,
 		),
 		'quality' => 90
