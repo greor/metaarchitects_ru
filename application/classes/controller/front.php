@@ -286,7 +286,6 @@ class Controller_Front extends Controller_Template {
 				->and_where('level', '<', 3)
 				->order_by('level', 'asc')
 				->order_by('position', 'asc')
-				->limit(8)
 				->find_all();
 
 			$this->_menu = $this->_parse_menu_item($pages);
