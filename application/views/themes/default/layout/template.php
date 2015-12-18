@@ -29,7 +29,7 @@
 		echo HTML::style($_css);
 	} 
 ?>
-	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css" rel="stylesheet">
+	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css?v=2" rel="stylesheet">
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900%7CMontserrat:400,700%7CLato:400,100,300,700,900%7CLekton:400,400italic,700' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
