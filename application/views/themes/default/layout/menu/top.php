@@ -12,12 +12,13 @@
 						<ul class="main-nav-menu main-nav-menu-effect font4light">
 <?php
 						$list = array();
+						$_str = '';
 						foreach ($menu as $_id => $_item) {
 							$_key = str_pad($_id, 2, '0', STR_PAD_LEFT);
 							
 							$_has_childrens = FALSE;
 							if ( ! empty($_item['sub'])) {
-								$_str = '<div class="sub-nav sub-nav-'.$_key.'">';
+								$_str .= '<div class="sub-nav sub-nav-'.$_key.'">';
 								foreach ($_item['sub'] as $_k => $_v) {
 									$_str .= HTML::anchor($_v['uri'], $_v['title'], array(
 										'target' => $_v['target']
