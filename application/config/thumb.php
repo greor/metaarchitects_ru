@@ -93,7 +93,7 @@ return array(
 		'resize' => array(
 			'width' => 800,
 			'height' => 600,
-			'master' => Image::WIDTH,
+			'master' => Image::AUTO,
 		),
 		'crop' => array(
 			'width' => 800,
