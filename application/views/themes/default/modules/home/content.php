@@ -2,6 +2,7 @@
 
 	<div  class="container">
 	  
+<?php if (0): ?>	  
 		<div class="row add-top-half">
 			<article class="text-center col-md-10 col-md-offset-1">
 				<a href="<?php echo URL::base(); ?>">
@@ -10,6 +11,7 @@
 				<p class="minimal-caps font4light black add-top-quarter">Portfolio of Edgar Uber, A Young Graphic Designer.</p>
 			</article>
 		</div>
+<?php endif; ?>
 	
 		<div id="works-container" class="works-container works-masonry-container white-bg container clearfix">
 <?php
