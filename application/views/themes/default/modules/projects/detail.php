@@ -20,17 +20,15 @@
 				<article class="text-center col-md-12">
 					<h1 class="minimal-caps font4 black add-top-quarter"><?php echo $orm->title; ?></h1>
 					<div class="inner-spacer color-bg"></div>
-<?php 
-						echo '<br><br>', $orm->text; 
-?>
 				</article>
 			</div>
 		</div>
+		
 <?php
 		if ( ! empty($photo)):
 ?>		
 			<div class="container">
-				<div id="wall-showcase" class="wall-showcase">
+				<div id="wall-showcase" class="wall-showcase" style="margin-bottom: 15px;">
 <?php
 				$orm_helper = ORM_Helper::factory('photo');
 				$url_base = URL::base();
@@ -61,4 +59,13 @@
 <?php
 		endif;
 ?>		
+		<div class="container">
+			<div class="row">
+				<article class="text-center col-md-12">
+<?php 
+						echo $orm->text; 
+?>
+				</article>
+			</div>
+		</div>
 	</section>
