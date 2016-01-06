@@ -357,10 +357,7 @@ class Controller_Front extends Controller_Template {
 			
 			// тут добавляем элементы "подменю"
 			
-			if ( $item->type == 'url' ) {
-				$return_item['uri'] = $item->data;
-				$return[ $item->id ] = $return_item;
-			} elseif (isset( $return[ $item->parent_id ] )) {
+			if (isset( $return[ $item->parent_id ] )) {
 				$return_item['uri'] = $return[ $item->parent_id ]['uri'].'/'.$item->uri;
 				$return[ $item->parent_id ]['sub'][ $item->id ] = $return_item;
 			} elseif ( $item->parent_id == 0 ) {
