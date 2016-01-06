@@ -61,7 +61,7 @@
 ?>		
 		<div class="container">
 			<div class="row">
-				<article class="text-center col-md-12">
+				<article class="text-justify col-md-12">
 <?php 
 						echo $orm->text; 
 ?>

@@ -20,9 +20,12 @@
 				<article class="text-center col-md-12">
 					<h1 class="minimal-caps font4 black add-top-quarter"><?php echo $page->title; ?></h1>
 					<div class="inner-spacer color-bg"></div>
+					<br><br>
+					<div class="text-justify">
 <?php 
-						echo '<br><br>', $page->text; 
+						echo $page->text; 
 ?>
+					</div>
 				</article>
 			</div>
 		</div>
