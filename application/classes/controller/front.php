@@ -29,6 +29,8 @@ class Controller_Front extends Controller_Template {
 	protected $media;
 	protected $no_img = 'images/default/no_img.jpg';
 	protected $_0_gif = 'images/default/0.gif';
+	
+	protected $top_filter = array();
 
 	/* Internal vars */
 	protected $site;
@@ -120,7 +122,8 @@ class Controller_Front extends Controller_Template {
 		
 		$data = array(
 			'content' => $content,
-			'menu' => $this->get_top_menu()
+			'menu' => $this->get_top_menu(),
+			'TOP_FILTER' => $this->top_filter
 		);
 		if ( ! $this->request->is_ajax()) 	{
 			$data['page_header'] = $this->page_header;
@@ -283,7 +286,6 @@ class Controller_Front extends Controller_Template {
 				->and_where('level', '<', 3)
 				->order_by('level', 'asc')
 				->order_by('position', 'asc')
-				->limit(8)
 				->find_all();
 
 			$this->_menu = $this->_parse_menu_item($pages);

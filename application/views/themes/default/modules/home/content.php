@@ -22,8 +22,9 @@
 			$_file = $orm_helper->file_uri('image', $_item->image);
 			$_thumb = Thumb::uri('projects_'.$_item->size, $_file);
 			$_link = str_replace('{element_id}', $_item->id, $link_tpl);
+			$_filter_key = Ku_Text::slug($_item->category);
 ?>		
-			<div class="works-item works-item-<?php echo $_item->size; ?> info logos ui">
+			<div class="works-item works-item-<?php echo $_item->size; ?> info logos ui <?php echo $_filter_key; ?>">
 <?php
 				echo HTML::image($_thumb, array(
 					'title' => $_item->title,
