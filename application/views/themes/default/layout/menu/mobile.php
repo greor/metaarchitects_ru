@@ -6,6 +6,10 @@
 	<nav class="mobile-nav hidden-lg">
 		<ul class="slimmenu">
 <?php
+		echo '<li>', HTML::anchor(URL::base(), __('Projects'), array(
+			'target' => '_self',
+		)), '</li>';
+
 		foreach ($menu as $_id => $_item) {
 			$_has_children =  ! empty($_item['sub']);
 			echo '<li>', HTML::anchor($_item['uri'], $_item['title'], array(
