@@ -71,11 +71,12 @@
 					<article class="col-md-12 text-center">
 						<div class="inner-spacer color-bg"></div>
 <?php
-						echo View_Theme::factory('layout/footer/social');
+// 						echo View_Theme::factory('layout/footer/social');
 ?>	             
 					</article>
 				</div>
 <?php
+				echo View_Theme::factory('layout/footer/contacts');
 				echo View_Theme::factory('layout/footer/copyright');
 ?>	             
 			</div>
