@@ -75,6 +75,19 @@ return array(
 		),
 		'quality' => 90
 	),
+	'list_400x400' => array(
+		'path' => 'upload/images/',
+		'resize' => array(
+			'width' => 400,
+			'height' => 400,
+			'master' => Image::INVERSE,
+		),
+		'crop' => array(
+			'width' => 400,
+			'height' => 400,
+		),
+		'quality' => 90
+	),
 	'list_445x380' => array(
 		'path' => 'upload/images/',
 		'resize' => array(

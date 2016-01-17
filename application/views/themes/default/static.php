@@ -17,13 +17,15 @@
 	<section class="page-section white-bg">
 		<div class="container">
 			<div class="row">
-				<article class="text-center col-md-12">
-					<h1 class="minimal-caps font4 black add-top-quarter"><?php echo $page->title; ?></h1>
-					<div class="inner-spacer color-bg"></div>
+				<article class="col-md-12">
+					<div class="text-center">
+						<h1 class="minimal-caps font4 black add-top-quarter"><?php echo $page->title; ?></h1>
+						<div class="inner-spacer color-bg"></div>
+					</div>
 					<br><br>
-					<div class="text-justify">
+					<div class="text-justify-important">
 <?php 
-						echo $page->text; 
+						echo $text; 
 ?>
 					</div>
 				</article>

@@ -475,6 +475,9 @@ class Controller_Front extends Controller_Template {
 			'packery' => array(
 				'js' => array('javascripts/libs/packery.pkgd.min.js', 'javascripts/custom/packery-wall-init.js'),
 			),
+			'inner-photo' => array(
+				'js' => array('javascripts/libs/jquery.bxslider.min.js', 'javascripts/custom/inner-photo.js'),
+			),
 
 			
 			
