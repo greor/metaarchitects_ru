@@ -105,5 +105,42 @@ p {
 	margin: -10px 0 0 -10px;
 }
 
+footer .social-nav a {
+	background: url(../images/icons.png) 0 0 no-repeat;
+	width: 48px;
+	height: 48px;
+	display: block;
+	font-size: 0 !important;
+}
+footer .social-nav a.vk {
+	background-position: -116px 0;
+}
+footer .social-nav a.tw {
+	background-position: -174px 0;
+}
+footer .social-nav a.fb {
+	background-position: -290px 0;
+}
+footer .social-nav a.yt {
+	background-position: -174px -58px;
+}
+footer .social-nav a.ok {
+	background-position: -232px 0;
+}
+footer .social-nav a.g {
+	background-position: -116px -232px;
+}
+footer .social-nav a.in {
+	background-position: -290px -174px;
+}
 
+.menu-collapser > .logo {
+	display: block;
+	width: 184px;
+	height: 48px;
+	background: url(../images/logo-mobile.png) 0 5px no-repeat;
+}
 
+.works-masonry-container .works-item {
+	overflow: hidden;
+}

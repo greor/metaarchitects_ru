@@ -24,7 +24,7 @@
 		// Mobile Menu (multi level)
 		$('ul.slimmenu').slimmenu({
 			resizeWidth : '1200',
-			collapserTitle : 'menu',
+			collapserTitle : '<a class="logo" href="/"></a>',
 			easingEffect : 'easeInOutQuint',
 			animSpeed : 'medium',
 		});

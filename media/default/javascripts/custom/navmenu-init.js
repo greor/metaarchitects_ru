@@ -54,7 +54,10 @@ $('.trigger-sub-nav a').click(function() {
 	$('.sub-nav').hide();
 	$('.trigger-sub-nav a').removeClass('current-main-nav');
 	$(this).addClass('current-main-nav');
-	$('.sub-nav-holder').show();
-	var subnavIndex = $(this).attr('data-sub-nav-target');
-	$('.sub-nav-' + subnavIndex).show();
+	
+	if ($(this).data('has-childrens')) {
+		$('.sub-nav-holder').show();
+		var subnavIndex = $(this).attr('data-sub-nav-target');
+		$('.sub-nav-' + subnavIndex).show();
+	}
 })

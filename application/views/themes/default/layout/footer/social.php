@@ -9,6 +9,16 @@
 		'google_link' => __('Google+'),
 		'instagram_link' => __('Instagram'),
 	);
+	$class = array(
+		'vkontakte_link' => 'vk',
+		'twitter_link' => 'tw',
+		'facebook_link' => 'fb',
+		'youtube_link' => 'yt',
+		'odnoklassniki_link' => 'ok',
+		'google_link' => 'g',
+		'instagram_link' => 'in',
+	);
+	
 	$links = array_intersect_key($SITE, array(
 		'vkontakte_link' => TRUE,
 		'twitter_link' => TRUE,
@@ -29,7 +39,10 @@
 	<ul class="social-nav font4 black">
 <?php
 	foreach ($links as $_key => $_link) {
-		echo '<li>', HTML::anchor($_link, $labels[$_key]), '</li>';
+		echo '<li>', HTML::anchor($_link, $labels[$_key], array(
+			'target' => '_blank',
+			'class' => $class[$_key]
+		)), '</li>';
 	}
 ?>	
 	</ul>

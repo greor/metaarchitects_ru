@@ -10,20 +10,22 @@
 			 numeratio: true
 		 }); 
 		 
-		var slider = $('#inner-photo-slider .bx-carusel-holder').bxSlider({
-			slideWidth: 210,
-			minSlides: 1,
-			maxSlides: 3,
-			slideMargin: 10,
-			pager: false,
-			prevText: '<i class="glyphicon glyphicon-chevron-left"></i>',
-			nextText: '<i class="glyphicon glyphicon-chevron-right"></i>',
-			nextSelector: "#inner-photo-slider .bx-carusel-controls .bx-next-holder",
-			prevSelector: "#inner-photo-slider .bx-carusel-controls .bx-prev-holder"
-		});
+		 if ($('#inner-photo-slider .bx-carusel-holder').length) {
+			 var slider = $('#inner-photo-slider .bx-carusel-holder').bxSlider({
+				 slideWidth: 210,
+				 minSlides: 1,
+				 maxSlides: 3,
+				 slideMargin: 10,
+				 pager: false,
+				 prevText: '<i class="glyphicon glyphicon-chevron-left"></i>',
+				 nextText: '<i class="glyphicon glyphicon-chevron-right"></i>',
+				 nextSelector: "#inner-photo-slider .bx-carusel-controls .bx-next-holder",
+				 prevSelector: "#inner-photo-slider .bx-carusel-controls .bx-prev-holder"
+			 });
+			 $(window).resize(function(){
+				 slider.reloadSlider();
+			 });
+		 }
 		
-		$(window).resize(function(){
-			slider.reloadSlider();
-		});
 	});
 })();

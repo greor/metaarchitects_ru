@@ -29,7 +29,7 @@
 		echo HTML::style($_css);
 	} 
 ?>
-	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css?v=3" rel="stylesheet">
+	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css?v=4" rel="stylesheet">
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900%7CMontserrat:400,700%7CLato:400,100,300,700,900%7CLekton:400,400italic,700' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
@@ -71,7 +71,7 @@
 					<article class="col-md-12 text-center">
 						<div class="inner-spacer color-bg"></div>
 <?php
-// 						echo View_Theme::factory('layout/footer/social');
+						echo View_Theme::factory('layout/footer/social');
 ?>	             
 					</article>
 				</div>
