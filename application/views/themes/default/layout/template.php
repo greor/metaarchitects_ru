@@ -100,5 +100,11 @@
 ?>
 	<script src="<?php echo $MEDIA; ?>javascripts/custom/navmenu-init.js" ></script> 
 	<script src="<?php echo $MEDIA; ?>javascripts/custom/main.js" ></script> 
+<?php
+	if (Kohana::$environment == Kohana::PRODUCTION) {
+		echo View_Theme::factory('counters/google');
+		echo View_Theme::factory('counters/yandex');
+	}
+?>	
 </body>
 </html>
