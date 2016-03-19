@@ -14,11 +14,11 @@ return array
 		'name' => 'Projects module',
 		'type' => Helper_Module::MODULE_SINGLE,
 	),
-// 	'news'	=>	array(
-// 		'alias' =>  'gregor-news-no-categories',
-// 		'name'  =>  'News module',
-// 		'type'  =>  Helper_Module::MODULE_SINGLE,
-// 	),
+	'news'	=>	array(
+		'alias' =>  'gregor-news-no-categories',
+		'name'  =>  'News module',
+		'type'  =>  Helper_Module::MODULE_SINGLE,
+	),
 // 	'blog'	=>	array(
 // 		'alias' =>  'gregor-blog',
 // 		'name'  =>  'Blog module',

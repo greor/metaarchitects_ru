@@ -107,14 +107,17 @@ class Controller_Front extends Controller_Template {
 				'keywords_tag', 
 				'description_tag'
 			 ));
-			$this->set_page_meta($this->get_page_meta());
-			if ( ! empty($this->page_meta['title_tag'])) {
-				if ( empty($this->title) ) {
-					$this->title = $this->page_meta['title_tag'];
-				} elseif ( strpos($this->title, $this->page_meta['title_tag']) === FALSE ) {
-					$this->title = $this->title.$this->title_delimiter.$this->page_meta['title_tag'];
-				}
+			
+			$meta = $this->get_page_meta();
+			if ( ! empty($meta['title_tag'])) {
+				$this->title = $meta['title_tag'];
+			} elseif ( ! empty($this->title)) {
+				$this->title = $this->title.$this->title_delimiter.$this->page_meta['title_tag'];
+			} else {
+				$this->title = $this->page_meta['title_tag'];
 			}
+			
+			$this->set_page_meta($meta);
 		}
 
 		$content = $this->template

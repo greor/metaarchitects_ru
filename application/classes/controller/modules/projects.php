@@ -35,6 +35,7 @@ class Controller_Modules_Projects extends Controller_Front {
 			->set('orm', $orm)
 			->set('photo', $photo);
 		
+		$this->title = $orm->title;
 			
 		$this->switch_on_plugin('page_project');
 		$this->switch_on_plugin('venobox');
@@ -44,4 +45,18 @@ class Controller_Modules_Projects extends Controller_Front {
 		$this->switch_on_plugin('imagesloaded');
 		$this->switch_on_plugin('packery');
 	}
+	
+	protected function get_page_meta()
+	{
+		$id = (int) $this->request->param('element_id');
+		$data = ORM::factory('project')
+			->where('id', '=', $id)
+			->find()
+			->as_array();
+		
+		return $this->extract_meta($data);
+	}
+	
+	
+	
 }

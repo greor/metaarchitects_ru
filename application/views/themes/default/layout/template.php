@@ -24,6 +24,7 @@
 	<link href="<?php echo $MEDIA; ?>stylesheets/less-compiled.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/main-responsive.css" rel="stylesheet">
 	<link href="<?php echo $MEDIA; ?>stylesheets/main-retina.css" rel="stylesheet">
+	<link href="<?php echo $MEDIA; ?>stylesheets/ionicons.min.css" rel="stylesheet">
 <?php
 	foreach ($CSS as $_css) {
 		echo HTML::style($_css);

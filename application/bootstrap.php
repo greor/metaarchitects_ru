@@ -128,9 +128,9 @@ Kohana::modules(array(
 		'gregor-main' => MODPATH.'gregor/main', // Main module
 		'gregor-projects' => MODPATH.'gregor/projects', // Projects module
 		'gregor-photo' => MODPATH.'gregor/photo', // Photo module
+		'gregor-news-no-categories' => MODPATH.'gregor/news-no-categories', // News module without categories
 		
 		
-// 		'gregor-news-no-categories' => MODPATH.'gregor/news-no-categories', // News module without categories
 // 		'gregor-blog'               => MODPATH.'gregor/blog',               // Blog module
 // 		'gregor-promo'              => MODPATH.'gregor/promo',              // Promo module
 // 		'gregor-feedback'           => MODPATH.'gregor/feedback',           // Photo module

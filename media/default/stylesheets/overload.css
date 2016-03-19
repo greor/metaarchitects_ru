@@ -144,3 +144,16 @@ footer .social-nav a.in {
 .works-masonry-container .works-item {
 	overflow: hidden;
 }
+
+.redirector li.active a > i {
+  border-color: #ffc740;
+  color: #ffc740;
+}
+
+.news-list-01:hover {
+	background-color: #ccc;
+}
+
+
+
+

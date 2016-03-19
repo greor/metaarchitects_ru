@@ -2,16 +2,11 @@
 
 	<div  class="container">
 	  
-<?php if (0): ?>	  
 		<div class="row add-top-half">
 			<article class="text-center col-md-10 col-md-offset-1">
-				<a href="<?php echo URL::base(); ?>">
-					<img alt="" title="" src="<?php echo $MEDIA; ?>images/badge.png"/>
-				</a>
-				<p class="minimal-caps font4light black add-top-quarter">Portfolio of Edgar Uber, A Young Graphic Designer.</p>
+				<h1 class="minimal-caps font4light black add-top-quarter">Архитектурная мастерская</h1>
 			</article>
 		</div>
-<?php endif; ?>
 	
 		<div id="works-container" class="works-container works-masonry-container white-bg container clearfix">
 <?php

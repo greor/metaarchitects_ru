@@ -115,4 +115,16 @@ return array(
 		'quality' => 90
 	),
 	
+	'news_930' => array(
+		'path' => 'upload/images/',
+		'resize' => array(
+			'width' => 930,
+			'master' => Image::WIDTH,
+		),
+		'crop' => array(
+			'width' => 930,
+		),
+		'quality' => 90
+	),
+	
 );
