@@ -23,7 +23,15 @@
 				</article>
 			</div>
 		</div>
-		
+		<div class="container">
+			<div class="row">
+				<article class="text-justify col-md-12">
+<?php 
+						echo $orm->text; 
+?>
+				</article>
+			</div>
+		</div>
 <?php
 		if ( ! empty($photo)):
 ?>		
@@ -59,13 +67,4 @@
 <?php
 		endif;
 ?>		
-		<div class="container">
-			<div class="row">
-				<article class="text-justify col-md-12">
-<?php 
-						echo $orm->text; 
-?>
-				</article>
-			</div>
-		</div>
 	</section>
