@@ -1,13 +1,11 @@
 <?php defined('SYSPATH') or die('No direct script access.'); ?>
 
 	<div  class="container">
- <?php if (0): ?>
 		<div class="row add-top-half">
 			<article class="text-center col-md-10 col-md-offset-1">
-				<h1 class="minimal-caps font4light black add-top-quarter">Архитектурная мастерская</h1>
+				<h1 class="minimal-caps font4light black add-top-quarter">Архитектурная мастерская Meta</h1>
 			</article>
 		</div>
-<?php endif; ?>
 		<div id="works-container" class="works-container works-masonry-container white-bg container clearfix">
 <?php
 		$page = Page_Route::page_by_name('projects');
