@@ -154,6 +154,10 @@ footer .social-nav a.in {
 	background-color: #ccc;
 }
 
-
+.text-content img {
+	display: block;
+    height: auto;
+    max-width: 100%;
+}
 
 

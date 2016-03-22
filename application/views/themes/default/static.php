@@ -23,7 +23,7 @@
 						<div class="inner-spacer color-bg"></div>
 					</div>
 					<br><br>
-					<div class="text-justify-important">
+					<div class="text-justify-important text-content">
 <?php 
 						echo $text; 
 ?>
