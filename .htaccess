@@ -4,6 +4,9 @@ RewriteEngine On
 # Installation directory
 RewriteBase /
 
+RewriteCond %{HTTP_HOST} ^www.meta-architects.ru$ [NC]
+RewriteRule ^(.*)$ http://meta-architects.ru/$1 [R=301,L]
+
 # Protect hidden files from being viewed
 <Files .*>
 	Order Deny,Allow
