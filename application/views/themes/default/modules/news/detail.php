@@ -15,7 +15,7 @@
 	<section class="page-section white-bg">
 		<div class="container">
 			<div class="row">
-				<article class="text-left col-md-12">
+				<article class="text-left col-md-12 text-content">
 					<h1 class="minimal-caps font4 black add-top-quarter"><?php echo HTML::chars($orm->title); ?></h1>
 					<div class="inner-spacer color-bg"></div>
 <?php 
