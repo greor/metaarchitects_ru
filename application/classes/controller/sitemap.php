@@ -212,7 +212,7 @@ class Controller_Sitemap extends Controller {
 		while ( ! $stop) {
 			$_item = $db_news->current();
 			if ($_item != FALSE) {
-				$_last_mod = ($_item->updated == '0000-00-00 00:00:00') ? $_item->created : $_item->updated;
+				$_last_mod = ($_item->updated > $_item->public_date) ? $_item->updated : $_item->public_date;
 				if ($_last_mod < $_date) {
 					$_changefreq = 'never';
 				} else {
