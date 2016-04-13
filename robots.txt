@@ -5,4 +5,4 @@ Disallow: /modules/
 Disallow: /system/
 Disallow: /admin/
 Allow: /media/default/images
-Host: https://dorognoe.ru
+Host: meta-architects.ru
