@@ -82,4 +82,12 @@ class Model_News extends ORM_Base {
 			),
 		);
 	}
+	
+	public function apply_mode_filter()
+	{
+		parent::apply_mode_filter();
+		if($this->_filter_mode == ORM_Base::FILTER_FRONTEND) {
+			$this->where($this->_object_name.'.public_date', '<=', date('Y-m-d H:i:00'));
+		}
+	}
 }
