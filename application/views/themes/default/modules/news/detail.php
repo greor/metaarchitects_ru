@@ -39,6 +39,9 @@
 				</article>
 			</div>
 		</div>
+<?php
+		echo View_Theme::factory('layout/share');
+?>		
 	</section>
 
 	<section class="redirector">

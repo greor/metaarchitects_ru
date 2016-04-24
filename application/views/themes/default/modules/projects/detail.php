@@ -66,5 +66,6 @@
 			</div>
 <?php
 		endif;
+		echo View_Theme::factory('layout/share');
 ?>		
 	</section>
