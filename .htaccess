@@ -13,6 +13,17 @@ RewriteRule ^(.*)$ http://meta-architects.ru/$1 [R=301,L]
 	Deny From All
 </Files>
 
+<FilesMatch ".(jpg|jpeg|png|ico|js|css|pdf)$">
+	Header set Cache-Control "max-age=360"
+</FilesMatch>
+
+<ifmodule mod_expires.c>
+	<FilesMatch ".(jpg|jpeg|png|ico|js|css|pdf)$">
+		ExpiresActive on
+		ExpiresDefault "access plus 1 hours"
+	</Filesmatch>
+</ifmodule>
+
 # Protect application and system files from being viewed
 RewriteRule ^(?:application|modules|system)\b.* index.php/$0 [L]
 
