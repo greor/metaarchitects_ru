@@ -44,7 +44,7 @@
 ?>	  
 	<header class="masthead white-bg visible-lg">
 		<a href="<?php echo URL::base(); ?>">
-			<img class="main-logo" alt="" title="" src="<?php echo $MEDIA; ?>images/logo.png"/>
+			<img class="main-logo" alt="" title="" src="<?php echo $MEDIA; ?>images/logo.png?v=2"/>
 		</a>
 		<h1 class="header-slogan">Архитектурная мастерская</h1>
 <?php
