@@ -172,6 +172,14 @@ footer .social-nav a.in {
 		margin-top: 40px;
 	}
 }
+.header-slogan {
+	font-size: 14px;
+	position: absolute;
+	top: 40px;
+	left: 72px;
+	font-family: "designova_hgr_light",sans-serif;
+	text-transform: uppercase;
+}
 
 
 

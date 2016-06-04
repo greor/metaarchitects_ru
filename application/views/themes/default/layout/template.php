@@ -30,7 +30,7 @@
 		echo HTML::style($_css);
 	} 
 ?>
-	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css?v=4" rel="stylesheet">
+	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css?v=5" rel="stylesheet">
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900%7CMontserrat:400,700%7CLato:400,100,300,700,900%7CLekton:400,400italic,700' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
@@ -46,6 +46,7 @@
 		<a href="<?php echo URL::base(); ?>">
 			<img class="main-logo" alt="" title="" src="<?php echo $MEDIA; ?>images/logo.png"/>
 		</a>
+		<h1 class="header-slogan">Архитектурная мастерская</h1>
 <?php
 		if ( ! empty($TOP_FILTER)) {
 			echo View_Theme::factory('layout/filter', array(
