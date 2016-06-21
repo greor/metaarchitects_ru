@@ -7,6 +7,9 @@
 	<meta name="keywords" content="<?php echo HTML::chars($PAGE_META['keywords_tag']) ?>">
 	<meta name="description" content="<?php echo HTML::chars($PAGE_META['description_tag']) ?>">
 	
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png"/>
+	
 <?php if (0): ?>
 	<link rel="shortcut icon" href="images/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="57x57" href="images/touchicons/apple-touch-icon-57-precomposed" />
