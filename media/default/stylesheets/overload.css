@@ -181,6 +181,9 @@ footer .social-nav a.in {
 	text-transform: uppercase;
 }
 
+.text-content a {
+	text-decoration: underline;
+}
 
 
 
