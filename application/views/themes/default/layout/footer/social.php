@@ -41,10 +41,11 @@
 	foreach ($links as $_key => $_link) {
 		echo '<li>', HTML::anchor($_link, $labels[$_key], array(
 			'target' => '_blank',
+			'rel' => 'nofollow',
 			'class' => $class[$_key]
 		)), '</li>';
 	}
-?>	
+?>
 	</ul>
 	
 	
