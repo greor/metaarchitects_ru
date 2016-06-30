@@ -6,7 +6,7 @@ class Controller_Sitemap extends Controller {
 	
 	private $domain = 'http://meta-architects.ru';
 	private $parsed_modules = array( 
-		'news'
+		'news', 'projects'
 	);
 	private $sitemap_directory_base = 'upload/sitemaps';
 	private $sitemap_directory;
@@ -95,6 +95,9 @@ class Controller_Sitemap extends Controller {
 				switch($item['data']) {
 					case 'news':
 						$_set = $this->_news_items($item);
+						break;
+					case 'projects':
+						$_set = $this->_projects_items($item);
 						break;
 				}
 			}
@@ -221,6 +224,47 @@ class Controller_Sitemap extends Controller {
 				
 				$return[] = array(
 					'loc' => str_replace('{uri}', $_item->uri, $item_link_tpl),
+					'lastmod' => (empty($_last_mod) ? 'monthly' : $_last_mod),
+					'changefreq' => (empty($page['sm_changefreq']) ? 'monthly' : $page['sm_changefreq']),
+					'priority' => (empty($page['sm_priority']) ? '0.5' : $page['sm_priority']),
+				);
+			} else {
+				$stop = TRUE;
+			}
+			$db_news->next();
+		}
+
+		return $return;
+	}
+	
+	private function _projects_items($page)
+	{
+		$return = array();
+		$url_base = $this->domain.URL::base();
+		$return[] = $this->_page_item($page);
+		
+		$item_link_tpl = $url_base.Page_Route::uri($page['id'], 'projects', array(
+			'element_id' => '{element_id}',
+		));
+		
+		$db_news = ORM::factory('project')
+			->limit(1000)	
+			->find_all();
+		
+		$_date = date('Y-m-d H:i:s', strtotime('-1 month'));
+		$stop = ($db_news->count() <= 0);
+		while ( ! $stop) {
+			$_item = $db_news->current();
+			if ($_item != FALSE) {
+				$_last_mod = ($_item->updated > $_item->created) ? $_item->updated : $_item->created;
+				if ($_last_mod < $_date) {
+					$_changefreq = 'never';
+				} else {
+					$_changefreq = $page['sm_changefreq'];
+				}
+				
+				$return[] = array(
+					'loc' => str_replace('{element_id}', $_item->id, $item_link_tpl),
 					'lastmod' => (empty($_last_mod) ? 'monthly' : $_last_mod),
 					'changefreq' => (empty($page['sm_changefreq']) ? 'monthly' : $page['sm_changefreq']),
 					'priority' => (empty($page['sm_priority']) ? '0.5' : $page['sm_priority']),
