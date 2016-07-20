@@ -185,6 +185,97 @@ footer .social-nav a.in {
 	text-decoration: underline;
 }
 
+.feedback-modal-holder {
+	margin: 30px 0;
+	text-align: center;
+}
+
+#feedback-modal .modal-content {
+	border-radius: 0 !important;
+}
+#feedback-modal .modal-header {
+	border: none;
+	text-align: center;
+}
+#feedback-modal .modal-footer {
+	border: none;
+}
+#feedback-modal h4 {
+	font-family: "designova_hgr_regular",sans-serif !important;
+	font-size: 22px;
+	letter-spacing: 4px;
+	line-height: 29px;
+}
+
+#feedback-modal .text {
+	margin-bottom: 20px;
+}
+
+input {
+	border-width: 1px !important;
+}
+.form-row.error input {
+	border-color: red !important;
+}
+
+
+
+.btn {
+	border-radius: 0 !important;
+	font-family: "Lekton",sans-serif !important;
+}
+
+@media (max-width: 980px) {
+	.modal-footer .btn:FIRST-CHILD {
+		margin-bottom: 15px;
+	}
+	.modal-footer .btn + .btn {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#feedback-modal h4 {
+		font-size: 14px;
+		letter-spacing: 4px;
+		line-height: 21px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	#feedback-modal h4 {
+		font-size: 16px;
+    	letter-spacing: 4px;
+		line-height: 23px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#feedback-modal h4 {
+		font-size: 18px;
+		letter-spacing: 4px;
+    	line-height: 25px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

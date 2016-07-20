@@ -50,6 +50,7 @@ class Controller_Page extends Controller_Front {
 			$text = str_replace($matches[0], $html, $text);
 		}
 			
+		$text = str_replace('{{FEEDBACK_FORM}}', View_Theme::factory('modal/feedback'), $text);
 			
 		$this->template
 			->set('page', $orm)

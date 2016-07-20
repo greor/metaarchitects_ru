@@ -145,3 +145,9 @@ Kohana::modules(array(
  * Uncomment the line below and define a salt for the Cookie.
  */
 Cookie::$salt = '33bb22fd092158a3ea74d931883767ea';
+
+Route::set('feedback', 'feedback')
+	->defaults(array(
+		'controller' => 'feedback',
+		'action'     => 'index',
+	));

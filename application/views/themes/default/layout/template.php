@@ -91,7 +91,6 @@
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/jquery.min.js"></script>
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/jquery.easing.1.3.js"></script>
 	<script src="<?php echo $MEDIA; ?>bootstrap/js/bootstrap.js"></script> 
-	<script src="<?php echo $MEDIA; ?>javascripts/libs/pace.min.js"></script>
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/device.min.js"></script>
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/retina.js" ></script> 
 	<script src="<?php echo $MEDIA; ?>javascripts/libs/classie.js" ></script> 
