@@ -11,7 +11,7 @@
 					<nav class="nav-item-wrap">
 						<ul class="main-nav-menu main-nav-menu-effect font4light">
 <?php
-						echo '<li class="trigger-sub-nav">', HTML::anchor(URL::base(), __('Projects'), array(
+						echo '<li class="trigger-sub-nav">', HTML::anchor(URL::base(), __('Portfolio'), array(
 							'target' => '_self',
 							'class' => 'main-nav-link white',
 							'data-sub-nav-target' => '00',

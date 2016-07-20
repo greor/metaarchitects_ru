@@ -6,7 +6,7 @@
 	<nav class="mobile-nav hidden-lg">
 		<ul class="slimmenu">
 <?php
-		echo '<li>', HTML::anchor(URL::base(), __('Projects'), array(
+		echo '<li>', HTML::anchor(URL::base(), __('Portfolio'), array(
 			'target' => '_self',
 		)), '</li>';
 
