@@ -310,9 +310,13 @@ input {
 }
 
 
+.home-text {
+	text-align: center;
+}
 
-
-
+.home-text a {
+	text-decoration: underline;
+}
 
 
 
