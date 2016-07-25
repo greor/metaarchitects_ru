@@ -49,7 +49,7 @@ class Controller_Feedback extends Controller {
 	private function send($data)
 	{
 		$message = 'Время заявки: '.date('Y-m-d H:i')."\r\n";
-		$message .= 'Номер телефона:'.Arr::get($data, 'phone');
+		$message .= 'Номер телефона:'.Arr::get($data, 'phone')."\r\n";
 		$message .= 'Имя:'.Arr::get($data, 'name');
 		Email::send('info@ask-meta.ru', 'no-reply@meta-architects.ru', '[META Architects]: заказ звонка', $message);
 	}
