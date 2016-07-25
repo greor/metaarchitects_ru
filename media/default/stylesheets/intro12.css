@@ -27,7 +27,13 @@
 .works-item.w4 { width:  100%; }
 
 .wall-showcase-item{
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-position: center center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+@media (max-width: 992px) {
+	.wall-showcase-item{
+		background-size: contain !important;
+	}
 }

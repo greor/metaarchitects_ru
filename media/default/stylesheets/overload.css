@@ -254,6 +254,9 @@ input {
     	letter-spacing: 4px;
 		line-height: 23px;
 	}
+	.btn {
+		font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 600px) {
