@@ -486,7 +486,7 @@ class Controller_Front extends Controller_Template {
 			
 			
 			'page_home' => array(
-				'css' => array('stylesheets/intro03.css'),
+				'css' => array('stylesheets/intro03.css?v=2'),
 			),
 			'page_project' => array(
 				'css' => array('stylesheets/intro12.css'),

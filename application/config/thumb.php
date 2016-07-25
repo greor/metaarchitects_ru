@@ -60,6 +60,19 @@ return array(
 		),
 		'quality' => 90
 	),
+	'projects_800x800' => array(
+		'path' => 'upload/images/',
+		'resize' => array(
+			'width' => 800,
+			'height' => 800,
+			'master' => Image::INVERSE,
+		),
+		'crop' => array(
+			'width' => 800,
+			'height' => 800,
+		),
+		'quality' => 90
+	),
 	
 	
 	'parallax' => array(

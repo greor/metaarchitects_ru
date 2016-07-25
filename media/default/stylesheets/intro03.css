@@ -8,6 +8,7 @@
 	margin: 1% !important;
 	padding: 0 !important;
 	width: 31.3% !important;
+	border: 1px solid #bfbfbf;
 }
 .works-masonry-container .works-item-400x400 {
 	width: 31.3% !important;
@@ -16,6 +17,9 @@
 	width: 31.3% !important;
 }
 .works-masonry-container .works-item-800x387 {
-	width: 64.6% !important;
+	width: 64.5% !important;
+}
+.works-masonry-container .works-item-800x800 {
+	width: 64.5% !important;
 }
       
