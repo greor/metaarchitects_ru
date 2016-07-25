@@ -41,7 +41,7 @@
 					var $this = $(this);
 					if ( ! $this.val()) {
 						$this.closest(".form-row")
-						.addClass("error");
+							.addClass("error");
 					}
 				});
 				
@@ -49,12 +49,34 @@
 					return;
 				}
 				
-				// показать лоадер
-				// в случае успешной отправки показать показать сообщение, что отправили
-				// в случае ошибки показать сообщение с просьбой перезвонить по номеру
+				$form.addClass("js-sending");
 				
-				
-				$modal.modal("hide");
+				$.ajax({
+					url: $form.data("action"),
+					method: "post",
+					dataType: 'json',
+					data: $form.serializeArray()
+				}).done(function(response){
+					if(response.errors.length) {
+						for (var i = 0; i < response.errors.length; i++) {
+							$form.find("[name="+response.errors[i]+"]")
+								.closest(".form-row").addClass("error");
+						}
+					} else {
+						alert("Спасибо за сотрудничество, мы свяжемся с вами в ближайшее время!");
+						setTimeout(function(){
+							$modal.modal("hide");
+						});
+					}
+				}).fail(function(jqXHR, textStatus, errorThrown){
+					alert("Приносим извинения за временный неполадки! Вы можете напрямую связаться с нами по телефону 8-921-550-54-84 и задать все интересующие вопросы!");
+					
+					setTimeout(function(){
+						$modal.modal("hide");
+					});
+				}).always(function(){
+					$form.removeClass("js-sending");
+				});
 			});
 			
 			$modal.on("show.bs.modal", function (e) {
@@ -62,6 +84,9 @@
 					.removeClass("error");
 				$form.find(":input")
 					.val("");
+			});
+			$modal.on("hide.bs.modal", function (e) {
+				return ! $form.hasClass("js-sending");
 			});
 		}
 		

@@ -32,6 +32,11 @@
 				</article>
 			</div>
 		</div>
+		<div class="container">
+<?php
+			echo View_Theme::factory('modal/feedback');
+?>
+		</div>
 <?php
 		if ( ! empty($photo)):
 ?>		

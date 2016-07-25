@@ -216,8 +216,14 @@ input {
 }
 .form-row.error input {
 	border-color: red !important;
+	background: #fde5e5 !important;
 }
-
+.form-row.error input::-moz-placeholder {
+	color: red !important;
+}
+.form-row.error input::-webkit-input-placeholder {
+	color: red !important;
+}
 
 
 .btn {
@@ -258,11 +264,36 @@ input {
 	}
 }
 
+.js-loader,
+.js-loader:before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.js-loader:before {
+	display: block;
+	content: '.';
+	font-size: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.9;
+}
+.js-loader img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -16px 0 0 -16px;
+}
 
-
-
-
-
+.js-loader {
+	display: none;
+}
+.js-sending .js-loader {
+	display: block;
+}
 
 
 

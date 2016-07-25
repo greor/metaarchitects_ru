@@ -33,7 +33,7 @@
 		echo HTML::style($_css);
 	} 
 ?>
-	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css?v=5" rel="stylesheet">
+	<link href="<?php echo $MEDIA; ?>stylesheets/overload.css?v=6" rel="stylesheet">
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900%7CMontserrat:400,700%7CLato:400,100,300,700,900%7CLekton:400,400italic,700' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
@@ -103,7 +103,7 @@
 	} 
 ?>
 	<script src="<?php echo $MEDIA; ?>javascripts/custom/navmenu-init.js" ></script> 
-	<script src="<?php echo $MEDIA; ?>javascripts/custom/main.js" ></script> 
+	<script src="<?php echo $MEDIA; ?>javascripts/custom/main.js?v=2" ></script> 
 <?php
 	if (Kohana::$environment == Kohana::PRODUCTION) {
 		echo View_Theme::factory('counters/google');
