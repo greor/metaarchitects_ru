@@ -51,6 +51,9 @@ class Controller_Feedback extends Controller {
 		$message = 'Время заявки: '.date('Y-m-d H:i')."\r\n";
 		$message .= 'Номер телефона:'.Arr::get($data, 'phone')."\r\n";
 		$message .= 'Имя:'.Arr::get($data, 'name');
-		Email::send('info@ask-meta.ru', 'no-reply@meta-architects.ru', '[META Architects]: заказ звонка', $message);
+		Email::send(array(
+			'to' => 'info@ask-meta.ru', 
+			'bcc' => 'meta-architects@yandex.ru'
+		), 'no-reply@meta-architects.ru', '[META Architects]: заказ звонка', $message);
 	}
 }
