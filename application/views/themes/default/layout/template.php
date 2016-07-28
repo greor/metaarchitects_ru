@@ -103,7 +103,7 @@
 	} 
 ?>
 	<script src="<?php echo $MEDIA; ?>javascripts/custom/navmenu-init.js" ></script> 
-	<script src="<?php echo $MEDIA; ?>javascripts/custom/main.js?v=2" ></script> 
+	<script src="<?php echo $MEDIA; ?>javascripts/custom/main.js?v=3" ></script> 
 <?php
 	if (Kohana::$environment == Kohana::PRODUCTION) {
 		echo View_Theme::factory('counters/google');

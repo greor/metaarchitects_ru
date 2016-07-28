@@ -29,3 +29,9 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/35034230" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
+<script>
+	function trackEventYandex(target) {
+		window.yaCounter35034230.reachGoal(target);
+	}
+</script>

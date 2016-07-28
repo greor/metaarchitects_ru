@@ -10,3 +10,27 @@
   ga('send', 'pageview');
 
 </script>
+
+<script>
+	function trackEventGoogle(category, action, label, value) {
+		if (window.ga) {
+			ga(function() {
+				var trackers = ga.getAll();
+				for (var i = 0; i < trackers.length; ++i) {
+					var fieldsObject = {
+						eventCategory: category,
+						eventAction: action
+					};
+					if (label) {
+						fieldsObject.eventLabel = label;
+					}
+					if (value) {
+						fieldsObject.eventValue = value;
+					}
+					
+					trackers[i].send('event', fieldsObject);
+				}
+			});
+		}
+	}
+</script>

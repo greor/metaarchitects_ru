@@ -28,7 +28,7 @@
 	
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+					<button type="button" class="btn btn-default js-cancel" data-dismiss="modal">Закрыть</button>
 					<button type="button" class="btn btn-primary js-submit">Отправить</button>
 				</div>
 				<div class="js-loader"><img src="/media/default/images/bx_loader.gif"></div>
