@@ -18,11 +18,11 @@
 					</article>
 	
 					<form id="feedback-form" action="#" data-action="/feedback" method="post"> 
-	 					<div class="form-row">
-							<input type="text" placeholder="Номер телефона" name="phone" class="border-form">
-						</div>
 						<div class="form-row">
 							<input type="text" placeholder="Имя" name="name" class="border-form">
+						</div>
+	 					<div class="form-row">
+							<input type="text" placeholder="Номер телефона" name="phone" class="border-form">
 						</div>
 					</form>
 	
@@ -35,6 +35,4 @@
 			</div>
 		</div>
 	</div>
-	
-	
 	

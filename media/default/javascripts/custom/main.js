@@ -20,7 +20,6 @@
 		setSize();
 		$(window).resize(setSize);
 			
-			
 		// Mobile Menu (multi level)
 		$('ul.slimmenu').slimmenu({
 			resizeWidth : '1200',
@@ -87,6 +86,24 @@
 			});
 			$modal.on("hide.bs.modal", function (e) {
 				return ! $form.hasClass("js-sending");
+			});
+			
+			$form.find("[name=phone]").on("keypress", function(e){
+				var keyCode = null;
+				if (e.which == null) { // IE
+					keyCode = e.keyCode;
+				} else if (e.which != 0 && e.charCode != 0) { // все кроме IE
+					keyCode = e.which;
+				}
+				
+				keyCode = (keyCode < 32) ? null : keyCode;
+				if (keyCode === null) {
+					return;
+				}
+				var char = String.fromCharCode(keyCode);
+				if ((keyCode < 48 || keyCode > 57) && char !== "+" && char !== "-") {
+					e.preventDefault();
+				} 
 			});
 		}
 		
