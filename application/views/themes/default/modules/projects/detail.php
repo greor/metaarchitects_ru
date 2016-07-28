@@ -32,12 +32,11 @@
 				</article>
 			</div>
 		</div>
-		<div class="container">
 <?php
-			echo View_Theme::factory('modal/feedback');
-?>
-		</div>
-<?php
+		if ( ! empty($orm->text)) {
+			echo '<div class="container">', View_Theme::factory('modal/feedback'), '</div>';
+		}
+		
 		if ( ! empty($photo)):
 ?>		
 			<div class="container">
