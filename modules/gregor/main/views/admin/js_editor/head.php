@@ -6,7 +6,8 @@ $(document).ready(function() {
 		CKEDITOR.replace(e,{
 	        filebrowserUploadUrl : '/uploader?type=Files',
 	        width : 640,
-	        height: 500
+	        height: 500,
+	        allowedContent: true
 	    });
 	});
 	$('textarea.text_editor_br').each(function(i, e){
